@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .left {
-  @apply w-1/5 h-screen rounded-sm m-2 p-5 text-3xl bg-slate-400;
+  @apply w-full   md:w-3/5 lg:w-1/5  right-0  h-full  absolute p-5 text-3xl text-white  bg-slate-900;
 }
 
 .right {
-  @apply w-4/5 h-screen m-2 rounded-sm p-5 text-3xl bg-slate-400 flex-1;
+  @apply w-full h-full;
+}
+
+.transation_text {
+  @apply cursor-pointer font-sans hover:scale-110 hover:font-mono  hover:font-bold duration-300;
 }

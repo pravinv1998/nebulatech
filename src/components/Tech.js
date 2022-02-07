@@ -1,0 +1,62 @@
+import React from "react";
+import java from "../assets/lngico/java.svg";
+import php from "../assets/lngico/php.svg";
+import javascript from "../assets/lngico/javascript.svg";
+import selenium from "../assets/lngico/selenium.svg";
+
+import MyModal from "./MyModal";
+
+const Tech = () => {
+  return (
+    <div className="flex overflow-x-auto flex-wrap   items-center justify-around  mt-10 bg-white p-8 ">
+      <img
+        className="w-24 h-24 hover:scale-125   duration-300"
+        src={java}
+        onClick={(e) => (
+          <MyModal
+            name={"Java"}
+            data={"J2EE, Spring Framework, Microservices, Hibernate, Android"}
+          />
+        )}
+        alt="java"
+      />
+      <img
+        className="w-24 h-24 hover:scale-125  duration-300"
+        src={php}
+        onClick={(e) => (
+          <MyModal
+            name={"PHP"}
+            data={"Larvel Framework, Codeignite Framework"}
+          />
+        )}
+        alt="php"
+      />
+      <img
+        className="w-24 h-24 hover:scale-125  duration-300"
+        src={javascript}
+        onClick={(e) => (
+          <MyModal
+            name={"JavaScript"}
+            data={"ReactJs, Angular, React Native"}
+          />
+        )}
+        alt="javascript"
+      />
+      <img
+        className="w-24 h-24 hover:scale-125  duration-300"
+        src={selenium}
+        onClick={(e) => (
+          <MyModal
+            name={"Selenium"}
+            data={
+              "Selenium is an open-source umbrella project for a range of tools and libraries aimed at supporting web browser automation.Larvel Framework, Codeignite Framework"
+            }
+          />
+        )}
+        alt="serlenium"
+      />
+    </div>
+  );
+};
+
+export default Tech;
