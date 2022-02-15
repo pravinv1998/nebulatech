@@ -8,6 +8,8 @@ import Tech from "./components/Tech";
 import WhoWeAre from "./components/WhoWeAre";
 
 import img2 from "./assets/img/gifimg2.gif";
+import img1 from "./assets/img/gifimg1.gif";
+import img3 from "./assets/img/gifimg3.webp";
 import ClientData from "./components/ClientData";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
@@ -15,6 +17,7 @@ import ContactUs from "./components/ContactUs";
 import Career from "./components/Career";
 import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
+import Topbar from "./components/Topbar";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -35,7 +38,11 @@ function App() {
     );
   };
   return (
-    <div className="bg-gradient-to-r from-blue-500">
+    <div
+      className="w-full h-full bg-no-repeat bg-cover bg-fixed bg-left "
+      style={{ backgroundImage: `url( ${img3})` }}
+    >
+      {/* <Topbar /> */}
       <Navbar />
       <Routes>
         <Route path="/career" element={<Career />} />

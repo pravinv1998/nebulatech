@@ -70,21 +70,21 @@ const Data = [
   {
     id: 9,
     image: cloud,
-    name: "Clod Services",
+    name: "Cloud Services",
   },
 ];
 
 const Services = () => {
   return (
     <div
-      className="w-full h-full flex flex-wrap flex-col bg-primary items-center justify-around  p-4"
+      className="w-full h-full flex   flex-col bg-primary items-center justify-around  p-4"
       // style={{ backgroundImage: `url( ${img1})` }}
     >
       <h1 className="font-sans text-3xl mb-8 text-cyan-50"> Our Services </h1>
-      <div className="w-full h-full flex flex-wrap  items-center justify-around ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full h-full ">
         {Data.map((arrVal, i) => (
           <div
-            className="flex flex-col flex-wrap items-center  w-1/4 h-1/4 p-2 m-6 mb-5"
+            className="flex flex-col rounded-2xl  pt-5 pb-2  bg-gradient-to-r hover:bg-gradient-to-l hover:scale-125 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  flex-wrap items-center  w-[95%] h-auto"
             key={arrVal.id}
           >
             <img className="w-24 h-24  mb-4  " src={arrVal.image} />

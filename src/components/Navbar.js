@@ -52,7 +52,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap w-full h-full sticky top-0 px-8   bg-transparent  items-center justify-between ">
+      <div className="flex flex-wrap  w-full h-full sticky top-0 px-8   bg-primary  items-center justify-between ">
         <div className="flex text-sky-50 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
             <img

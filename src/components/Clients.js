@@ -6,10 +6,10 @@ import pursho from "../assets/img/pursho.jpg";
 
 const Clients = () => {
   return (
-    <div className=" w-full h-full bg-gray-200 flex flex-col flex-wrap items-center justify-around p-8 mb-8 ">
-      <h1 className="font-sans text-3xl mb-8 "> Our Services </h1>
+    <div className=" w-full h-full bg-gray-200 flex flex-col flex-wrap items-center justify-around p-8  ">
+      <h1 className="font-sans text-3xl mb-8 "> Our Clients </h1>
 
-      <div className=" w-full h-full  flex flex-wrap items-center justify-evenly  ">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-auto h-auto  ">
         <div className="w-50 h-40">
           <img
             src={infosys}

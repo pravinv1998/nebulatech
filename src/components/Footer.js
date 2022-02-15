@@ -39,8 +39,8 @@ const Footer = () => {
     );
   };
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-wrap items-start justify-around mt-4 p-4">
+    <div className="flex flex-col text-cyan-50 bg-primary text-1xl ">
+      <div className="flex  flex-wrap items-start justify-around pt-4 p-4">
         <div>
           <h1 className=" font-mono font-bold text-1xl ">Industries</h1>
           <h1 className=" font-mono  text-1xl ">Consultancy</h1>
