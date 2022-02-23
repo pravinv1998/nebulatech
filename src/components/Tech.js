@@ -10,7 +10,7 @@ const Tech = () => {
   return (
     <div className="flex overflow-x-auto flex-wrap   items-center justify-around  mt-10 bg-transparent p-8 ">
       <img
-        className="w-24 h-24 hover:scale-125   duration-300"
+        className=" w-20 md:w-24 h-auto hover:scale-125   duration-300"
         src={java}
         onClick={(e) => (
           <MyModal
@@ -21,7 +21,7 @@ const Tech = () => {
         alt="java"
       />
       <img
-        className="w-24 h-24 hover:scale-125  duration-300"
+        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
         src={php}
         onClick={(e) => (
           <MyModal
@@ -32,7 +32,7 @@ const Tech = () => {
         alt="php"
       />
       <img
-        className="w-24 h-24 hover:scale-125  duration-300"
+        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
         src={javascript}
         onClick={(e) => (
           <MyModal
@@ -43,7 +43,7 @@ const Tech = () => {
         alt="javascript"
       />
       <img
-        className="w-24 h-24 hover:scale-125  duration-300"
+        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
         src={selenium}
         onClick={(e) => (
           <MyModal

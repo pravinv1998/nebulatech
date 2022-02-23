@@ -40,7 +40,7 @@ const Footer = () => {
   };
   return (
     <div className="flex flex-col text-cyan-50 bg-primary text-1xl ">
-      <div className="flex  flex-wrap items-start justify-around pt-4 p-4">
+      <div className="flex flex-col md:flex-row  flex-wrap  space-y-4 md:space-y-0 pl-4 md:space-x-0  items-start justify-around py-10">
         <div>
           <h1 className=" font-mono font-bold text-1xl ">Industries</h1>
           <h1 className=" font-mono  text-1xl ">Consultancy</h1>
@@ -74,7 +74,7 @@ const Footer = () => {
           </h1>
         </div>
       </div>
-      <div className="flex mt-4 p-2 flex-wrap items-center justify-around">
+      <div className="flex mt-4 py-6 px-4 md:px-0 flex-wrap bg-slate-800 items-center justify-around">
         <h1>Copyright © 2018 - All Rights Reserved - Nebula Technology</h1>
         <h1>Developed by Pravin Vargad</h1>
       </div>

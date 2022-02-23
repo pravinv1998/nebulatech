@@ -39,7 +39,7 @@ function App() {
   };
   return (
     <div
-      className="w-full h-full bg-no-repeat bg-cover bg-fixed bg-left "
+      className="w-screen h-full bg-no-repeat bg-cover bg-fixed bg-left "
       style={{ backgroundImage: `url( ${img3})` }}
     >
       {/* <Topbar /> */}

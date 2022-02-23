@@ -7,10 +7,10 @@ const LandingPage = () => {
     <div>
       <div className="flex text-sky-50 mt-8 justify-around flex-wrap items-center  w-full h-full bg-transparent">
         <div className="mb-3">
-          <h1 className="flex-wrap text-7xl font-mono drop-shadow-2xl  ">
+          <h1 className="flex-wrap text-3xl md:text-5xl lg:text-7xl font-mono drop-shadow-2xl  ">
             Nebula Technology
           </h1>
-          <h1 className="flex-wrap text-2xl font-mono italic">
+          <h1 className="flex-wrap text-1xl md:text-2xl font-mono italic">
             Where creation happens...
           </h1>
           <div className="flex mt-2 items-center flex-wrap ">
@@ -61,7 +61,7 @@ const LandingPage = () => {
         </div>
         <img
           src={back}
-          className="mt-4 w-11/12 h-3/5  border-4 border-dashed rounded-3xl"
+          className="mt-4 w-screen h-full md:w-11/12 md:h-3/5  md:border-4 border-dashed md:rounded-3xl"
           alt="nebula_tech"
         />
       </div>

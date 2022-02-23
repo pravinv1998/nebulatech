@@ -77,7 +77,7 @@ const Data = [
 const Services = () => {
   return (
     <div
-      className="w-full h-full flex   flex-col bg-primary items-center justify-around  p-4"
+      className="w-full h-full flex   flex-col bg-transparent items-center justify-around  p-4"
       // style={{ backgroundImage: `url( ${img1})` }}
     >
       <h1 className="font-sans text-3xl mb-8 text-cyan-50"> Our Services </h1>
