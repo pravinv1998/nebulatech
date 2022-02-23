@@ -68,7 +68,7 @@ function Navbar() {
             Contact Us
           </Link>
           <Link to="aboutus" className="mx-4 transation_text">
-            AboutUS
+            AboutUS ///////////////////
           </Link> */}
         </div>
         <div className=" flex flex-wrap justify-around pr-2  ">
