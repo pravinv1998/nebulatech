@@ -42,7 +42,6 @@ function App() {
       className="w-screen h-full bg-no-repeat bg-cover bg-fixed bg-left "
       style={{ backgroundImage: `url( ${img3})` }}
     >
-      {/* <Topbar /> */}
       <Navbar />
       <Routes>
         <Route path="/career" element={<Career />} />
