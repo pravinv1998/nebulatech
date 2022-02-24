@@ -14,28 +14,28 @@ const Clients = () => {
           <img
             src={infosys}
             alt="infosys"
-            className="w-full h-full rounded-xl "
+            className="w-full h-full rounded-xl hover:scale-110 duration-300"
           />
         </div>
         <div className="w-50 h-40">
           <img
             src={itsupport}
             alt="itsupport"
-            className="w-full h-full rounded-xl "
+            className="w-full h-full rounded-xl hover:scale-110 duration-300"
           />
         </div>
         <div className="w-50 h-40">
           <img
             src={digital_matrix}
             alt="digital_matrix"
-            className="w-full h-full rounded-xl "
+            className="w-full h-full rounded-xl hover:scale-110 duration-300"
           />
         </div>
         <div className="w-50 h-40">
           <img
             src={pursho}
             alt="pursho"
-            className="w-full h-full rounded-xl "
+            className="w-full h-full rounded-xl hover:scale-110 duration-300"
           />
         </div>
       </div>

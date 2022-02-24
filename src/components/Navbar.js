@@ -5,6 +5,8 @@ import logo from "../assets/img/NebulaWhite.png";
 
 import { Menu, Transition } from "@headlessui/react";
 import Example from "../Example";
+import Sidebar from "../components/Sidebar";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +54,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap  w-full h-full sticky top-0 px-1 md:px-8   bg-primary  items-center justify-between ">
+      <div className="flex flex-wrap  w-full h-full sticky top-0 px-1 md:px-8   bg-transparent  items-center justify-between ">
         <div className="flex text-sky-50 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
             <img
@@ -72,14 +74,14 @@ function Navbar() {
           </Link> */}
         </div>
         <div className=" flex flex-wrap justify-around pr-2  ">
-          <Link to="/">
+          {/* <Link to="/">
             <button
               type="button"
               className=" transation_text mr-3 text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
             >
               Home
             </button>{" "}
-          </Link>
+          </Link> */}
           <Link to="login">
             <button
               type="button"
@@ -88,6 +90,8 @@ function Navbar() {
               Login
             </button>{" "}
           </Link>
+
+          <Sidebar />
           {/* <div>{isOpen ? <HideSidebar /> : <ShowSidebar />}</div> */}
         </div>
       </div>

@@ -17,7 +17,7 @@ import ContactUs from "./components/ContactUs";
 import Career from "./components/Career";
 import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
-import Topbar from "./components/Topbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -42,6 +42,7 @@ function App() {
       className="w-screen h-full bg-no-repeat bg-cover bg-fixed bg-left "
       style={{ backgroundImage: `url( ${img3})` }}
     >
+      {/* <Sidebar /> */}
       <Navbar />
       <Routes>
         <Route path="/career" element={<Career />} />

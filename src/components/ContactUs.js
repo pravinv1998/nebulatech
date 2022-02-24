@@ -2,8 +2,10 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div>
-      <h1>contact us</h1>
+    <div className="w-full h-screen">
+      <h1 className="text-5xl text-center justify-center text-cyan-50 ">
+        Contact Page
+      </h1>
     </div>
   );
 };
