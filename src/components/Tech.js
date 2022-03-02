@@ -11,7 +11,7 @@ import MyModal from "./MyModal";
 
 const Tech = () => {
   return (
-    <div className="flex overflow-x-auto flex-wrap   items-center justify-around  mt-10 bg-transparent p-8 ">
+    <div className="flex  overflow-x-auto flex-wrap   items-center justify-around  mt-10 bg-transparent p-8 ">
       <img
         className=" w-20 md:w-24 h-auto hover:scale-125   duration-300"
         src={java}

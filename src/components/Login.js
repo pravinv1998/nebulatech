@@ -3,8 +3,8 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const Login = () => {
   return (
-    <div className="flex w-full h-screen flex-col flex-wrap items-center mt-12   ">
-      <div className="border-2  rounded-lg w-4/5 md:w-2/5 h-4/5 flex flex-col items-center justify-center">
+    <div className="flex w-full h-screen  flex-col flex-wrap items-center mt-12   ">
+      <div className="border-2  backdrop-blur-sm bg-primary/30 rounded-lg w-4/5 md:w-2/5 h-4/5 flex flex-col items-center justify-center">
         <h1 className="font-bold  mt-10 text-2xl font-mono ">Login Page </h1>
         <div className="flex m-4 mt-4 flex-col items-start ">
           <div>

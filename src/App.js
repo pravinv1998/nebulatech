@@ -18,6 +18,7 @@ import Career from "./components/Career";
 import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
 import Sidebar from "./components/Sidebar";
+import Products from "./components/Products";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -25,7 +26,7 @@ function App() {
 
   const Home = () => {
     return (
-      <>
+      <div>
         {" "}
         <LandingPage />
         <Tech />
@@ -33,8 +34,7 @@ function App() {
         <Services />
         <ClientData />
         <Clients />
-        
-      </>
+      </div>
     );
   };
   return (
@@ -44,10 +44,12 @@ function App() {
     >
       {/* <Sidebar /> */}
       <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/career" element={<Career />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>

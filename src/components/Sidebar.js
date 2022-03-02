@@ -16,6 +16,7 @@ import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import InfoIcon from "@mui/icons-material/Info";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import HomeIcon from "@mui/icons-material/Home";
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -44,8 +45,10 @@ export default function Sidebar() {
       sx={{
         width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
         backgroundColor: "#111828",
+        backdropFilter: 'blur(8px)',
         height: "100%",
         color: "#F0F9FF",
+        
       }}
       role="presentation"
       onClick={() => setOpen(!open)}
@@ -85,6 +88,15 @@ export default function Sidebar() {
               <InfoIcon />
             </ListItemIcon>
             <ListItemText primary="About Us" />
+          </ListItem>
+        </Link>
+        <Divider />
+        <Link to="products">
+          <ListItem button>
+            <ListItemIcon sx={{ color: "#F0F9FF" }}>
+              <LocalGroceryStoreIcon />
+            </ListItemIcon>
+            <ListItemText primary="Products" />
           </ListItem>
         </Link>
       </List>

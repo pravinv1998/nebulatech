@@ -1,4 +1,5 @@
 import React from "react";
+import whoweare from "../assets/img/whoweare.jpg";
 import who from "../assets/img/who.jpg";
 
 const WhoWeAre = () => {
@@ -6,10 +7,10 @@ const WhoWeAre = () => {
     <div className="">
       <div
         style={{ backgroundImage: `url( ${who})` }}
-        className=" bg-no-repeat bg-cover bg-fixed grid  md:grid-cols-2 gap-2 grid-cols-1 md:flex bg-gray-200 w-screen h-auto md:items-center md:justify-around  p-10 "
+        className=" bg-no-repeat bg-cover bg-fixed bg-gray-200 w-full h-full  "
       >
-        <div className="flex-1 rounded-md h-full bg-transparent p-4 space-x-4  text-slate-50 flex flex-wrap flex-col  justify-start">
-          <h1 className=" font-mono font-bold text-2xl md:text-4xl">
+        <div className=" rounded-md  outline backdrop-blur-sm bg-primary/30 p-10 py-16 space-x-4  text-slate-50 flex  flex-col items-start  justify-around">
+          <h1 className="item-center font-mono font-bold text-2xl md:text-4xl">
             Who We Are
           </h1>
           <h1 className=" font-mono font-bold text-1xl md:text-2xl">
@@ -24,9 +25,6 @@ const WhoWeAre = () => {
             the world isn’t stopping and neither are we.
           </h1>
         </div>
-        {/* <div className=" flex-1 flex-wrap flex justify-end">
-          <img src={who} className="w-full h-full" alt="who_we_are" />
-        </div> */}
       </div>
     </div>
   );
