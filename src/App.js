@@ -33,7 +33,7 @@ function App() {
         <Services />
         <ClientData />
         <Clients />
-        <Footer />
+        
       </>
     );
   };
@@ -51,6 +51,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

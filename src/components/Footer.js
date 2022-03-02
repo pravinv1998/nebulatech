@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/img/NebulaWhite.png";
 
 const Footer = () => {
   const PhoneIcon = () => {
@@ -40,22 +42,22 @@ const Footer = () => {
   };
   return (
     <div className="flex flex-col text-cyan-50 bg-primary text-1xl ">
-      <div className="flex flex-col md:flex-row  flex-wrap  space-y-4 md:space-y-0 pl-4 md:space-x-0  items-start justify-around py-10">
-        <div>
+      <div className="flex flex-col md:flex-row items-start  md:items-center justify-around space-y-4 px-10 py-10">
+        {/* <div>
           <h1 className=" font-mono font-bold text-1xl ">Industries</h1>
           <h1 className=" font-mono  text-1xl ">Consultancy</h1>
           <h1 className=" font-mono  text-1xl ">IT</h1>
           <h1 className=" font-mono  text-1xl ">Software Development</h1>
-        </div>
-        <div>
-          <h1 className=" font-mono font-bold text-1xl ">Products</h1>
-          <h1 className=" font-mono  text-1xl ">Web Design And Development</h1>
-          <h1 className=" font-mono  text-1xl ">Mobile Apps</h1>
-          <h1 className=" font-mono  text-1xl ">Desktop Apps</h1>
-          <h1 className=" font-mono  text-1xl ">Cloud</h1>
-        </div>
-        <div>
-          <h1 className=" font-mono font-bold text-1xl ">Nebula Technology</h1>
+        </div> */}
+        
+        <div className="w-3/4" >
+        <Link to="/">
+            <img
+              className=" h-[70px] mb-4 left-0 object-contain "
+              src={logo}
+              alt="logo"
+            />{" "}
+          </Link>
           <h1 className=" font-mono  text-1xl ">
             CTS No 349, 3rd floor, Shilavihar Colony,
           </h1>
@@ -70,10 +72,15 @@ const Footer = () => {
           </h1>
           <h1 className="flex flex-wrap font-mono  text-1xl ">
             {" "}
-            <EmailIcon /> support_nebula@gmail.com
+            <EmailIcon /> hr@nebula-technology.com
           </h1>
         </div>
+        <div className="w-full" >
+        <iframe className=" rounded-md w-full top-0 left-0 relative overflow-hidden cover "  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15133.991230574691!2d73.8231593!3d18.5063932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12d81c9f02199c77!2sNebula%20Technology!5e0!3m2!1sen!2sin!4v1646203735297!5m2!1sen!2sin" width="600" height="300" style={{border: "0"}} allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
       </div>
+      
       <div className="flex mt-4 py-6 px-4 md:px-0 flex-wrap bg-slate-800 items-center justify-around">
         <h1>Copyright © 2018 - All Rights Reserved - Nebula Technology</h1>
         <h1>Developed by Pravin Vargad</h1>

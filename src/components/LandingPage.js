@@ -61,7 +61,7 @@ const LandingPage = () => {
         </div>
         <img
           src={back}
-          className="mt-4 w-screen h-full md:w-11/12 md:h-3/5  md:border-4 border-dashed md:rounded-3xl"
+          className="mt-4 w-screen h-full md:w-11/12 md:h-3/5    md:rounded-3xl"
           alt="nebula_tech"
         />
       </div>

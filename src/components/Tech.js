@@ -3,6 +3,9 @@ import java from "../assets/lngico/java.svg";
 import php from "../assets/lngico/php.svg";
 import javascript from "../assets/lngico/javascript.svg";
 import selenium from "../assets/lngico/selenium.svg";
+import servicenow from "../assets/lngico/servicenow.png";
+import ui from "../assets/lngico/ui.png";
+
 
 import MyModal from "./MyModal";
 
@@ -22,10 +25,10 @@ const Tech = () => {
       />
       <img
         className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
-        src={php}
+        src={servicenow}
         onClick={(e) => (
           <MyModal
-            name={"PHP"}
+            name={"Service Now"}
             data={"Larvel Framework, Codeignite Framework"}
           />
         )}
@@ -33,7 +36,7 @@ const Tech = () => {
       />
       <img
         className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
-        src={javascript}
+        src={ui}
         onClick={(e) => (
           <MyModal
             name={"JavaScript"}

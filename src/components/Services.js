@@ -13,7 +13,6 @@ import desktop from "../assets/img/6.png";
 import android from "../assets/img/7.png";
 import ios from "../assets/img/8.png";
 import manpower from "../assets/img/9.png";
-import devops from "../assets/img/10.png";
 import cloud from "../assets/img/11.png";
 
 const Data = [
@@ -60,15 +59,11 @@ const Data = [
   {
     id: 9,
     image: manpower,
-    name: "Manpower Provider",
+    name: "HR Solutions",
   },
+  
   {
-    id: 9,
-    image: devops,
-    name: "DevOps",
-  },
-  {
-    id: 9,
+    id: 10,
     image: cloud,
     name: "Cloud Services",
   },
