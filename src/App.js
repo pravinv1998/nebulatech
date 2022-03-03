@@ -10,6 +10,8 @@ import WhoWeAre from "./components/WhoWeAre";
 import img2 from "./assets/img/gifimg2.gif";
 import img1 from "./assets/img/gifimg1.gif";
 import img3 from "./assets/img/gifimg3.webp";
+import galaxy1 from "./assets/app/galaxy1.gif";
+import galaxy2 from "./assets/app/galaxy2.gif";
 import ClientData from "./components/ClientData";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
@@ -40,7 +42,7 @@ function App() {
   return (
     <div
       className="w-screen h-full bg-no-repeat bg-cover bg-fixed bg-left "
-      style={{ backgroundImage: `url( ${img3})` }}
+      style={{ backgroundImage: `url( ${galaxy2})` }}
     >
       {/* <Sidebar /> */}
       <Navbar />

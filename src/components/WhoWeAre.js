@@ -6,14 +6,14 @@ const WhoWeAre = () => {
   return (
     <div className="">
       <div
-        style={{ backgroundImage: `url( ${who})` }}
-        className=" bg-no-repeat bg-cover bg-fixed bg-gray-200 w-full h-full  "
+        // style={{ backgroundImage: `url( ${who})` }}
+        className=" bg-no-repeat bg-cover bg-fixed bg-transparent w-full h-full  "
       >
-        <div className=" rounded-md  outline backdrop-blur-sm bg-primary/30 p-10 py-16 space-x-4  text-slate-50 flex  flex-col items-start  justify-around">
-          <h1 className="item-center font-mono font-bold text-2xl md:text-4xl">
+        <div className=" rounded-md   backdrop-blur-sm bg-slate-500/30 p-10 py-16 space-x-4  text-slate-50 flex  flex-col items-start  justify-around">
+          <h1 className="item-center justify-center font-mono font-bold text-2xl md:text-4xl">
             Who We Are
           </h1>
-          <h1 className=" font-mono font-bold text-1xl md:text-2xl">
+          <h1 className="   text-1xl md:text-2xl">
             We are a friendly, dynamic, knowledgeable, experienced and committed
             people works in the Geo-Spatial Domain. We put clients at the heart
             of what we do, though our services go far beyond that. For over 4

@@ -54,14 +54,10 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap  w-full h-full sticky top-0 px-1 md:px-8   backdrop-blur-sm bg-primary/30  items-center justify-between ">
+      <div className="flex flex-wrap  w-full h-full sticky top-0 px-1 md:px-8   backdrop-blur-sm bg-slate-500/30  items-center justify-between ">
         <div className="flex text-sky-50 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
-            <img
-              className=" h-[70px] "
-              src={logo}
-              alt="logo"
-            />{" "}
+            <img className=" h-[70px] " src={logo} alt="logo" />{" "}
           </Link>
           {/* <Link to="career" className="mx-4 transation_text">
             Career

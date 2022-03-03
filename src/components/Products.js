@@ -53,7 +53,10 @@ const Products = () => {
             className="flex flex-col rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500 backdrop-blur-sm bg-white/40   flex-wrap items-center justify-between  w-[90%] h-[100%]"
             key={arrVal.id}
           >
-            <img className="w-70 h-70 top-0  mb-4  " src={arrVal.image} />
+            <img
+              className="w-70 h-70 top-0 hover:scale-125 duration-500  mb-4  "
+              src={arrVal.image}
+            />
             <h4 className="font-mono text-2xl text-cyan-50 bottom-0">
               {" "}
               {arrVal.name}{" "}

@@ -41,7 +41,7 @@ const Footer = () => {
     );
   };
   return (
-    <div className="flex flex-col text-cyan-50 bg-primary text-1xl ">
+    <div className="flex flex-col text-cyan-50 bg-transparent text-1xl ">
       <div className="flex flex-col md:flex-row items-start  md:items-center justify-around space-y-8 px-10 py-10">
         <div className="w-full md:w-3/4">
           <div className="w-full md:w-3/4">
@@ -52,23 +52,25 @@ const Footer = () => {
                 alt="logo"
               />{" "}
             </Link>
-            <div className="w-full rounded-md backdrop-blur-sm bg-white/30 mt-4 space-y-2 p-4 ">
-              <h1 className="flex flex-wrap   text-1xl ">
+            <div className="w-full rounded-md backdrop-blur-sm bg-slate-700/30 mt-4 space-y-2 p-2 ">
+              <h1 className="flex flex-wrap   text-[18px] ">
                 {" "}
                 <PhoneIcon /> 8668768612, 8097760688, 7507316272
               </h1>
-              <h1 className="flex flex-wrap   text-1xl ">
+              <h1 className="flex flex-wrap   text-[18px] ">
                 {" "}
                 <EmailIcon /> hr@nebula-technology.com
               </h1>
             </div>
-            <div className=" w-full rounded-md backdrop-blur-sm bg-white/30 mt-4 space-y-2 p-4 ">
-              <h1 className="   text-1xl ">
+            <div className=" w-full rounded-md backdrop-blur-sm bg-slate-700/30 mt-4 space-y-2 p-2 ">
+              <h1 className="   text-[18px] ">
                 CTS No 349, 3rd floor, Shilavihar Colony,
               </h1>
-              <h1 className="   text-1xl  ">Opposite to Durga Mata Mandir,</h1>
-              <h1 className="   text-1xl ">Near Paud Phata Bus Stop,</h1>
-              <h1 className="   text-1xl ">Kothrud, Pune 411038</h1>
+              <h1 className="   text-[18px]  ">
+                Opposite to Durga Mata Mandir,
+              </h1>
+              <h1 className="   text-[18px] ">Near Paud Phata Bus Stop,</h1>
+              <h1 className="   text-[18px] ">Kothrud, Pune 411038</h1>
             </div>
           </div>
         </div>
@@ -85,7 +87,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex mt-4 py-6 px-4 md:px-0 flex-wrap bg-slate-800 items-center justify-around">
+      <div className="flex text-[1rem] mt-4 py-6 px-4 md:px-0 flex-wrap backdrop-blur-sm bg-slate-700/30   items-center justify-around">
         <h1>Copyright © 2018 - All Rights Reserved - Nebula Technology</h1>
         <h1>Developed by Pravin Vargad</h1>
       </div>
