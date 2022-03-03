@@ -41,7 +41,7 @@ function App() {
   };
   return (
     <div
-      className="w-screen h-full bg-no-repeat bg-cover bg-fixed bg-left "
+      className="brightness-125 w-screen h-full bg-no-repeat bg-cover bg-fixed bg-right "
       style={{ backgroundImage: `url( ${galaxy2})` }}
     >
       {/* <Sidebar /> */}

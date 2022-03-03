@@ -6,14 +6,13 @@ import selenium from "../assets/lngico/selenium.svg";
 import servicenow from "../assets/lngico/servicenow.png";
 import ui from "../assets/lngico/ui.png";
 
-
 import MyModal from "./MyModal";
 
 const Tech = () => {
   return (
     <div className="flex  overflow-x-auto flex-wrap   items-center justify-around  mt-10 bg-transparent p-8 ">
       <img
-        className=" w-20 md:w-24 h-auto hover:scale-125   duration-300"
+        className=" w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125   duration-500"
         src={java}
         onClick={(e) => (
           <MyModal
@@ -24,7 +23,7 @@ const Tech = () => {
         alt="java"
       />
       <img
-        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
+        className="w-20 md:w-24 h-auto shadow-lg shadow-slate-400/50 rounded-xl hover:scale-125  duration-500"
         src={servicenow}
         onClick={(e) => (
           <MyModal
@@ -35,7 +34,7 @@ const Tech = () => {
         alt="php"
       />
       <img
-        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
+        className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
         src={ui}
         onClick={(e) => (
           <MyModal
@@ -46,7 +45,7 @@ const Tech = () => {
         alt="javascript"
       />
       <img
-        className="w-20 md:w-24 h-auto hover:scale-125  duration-300"
+        className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
         src={selenium}
         onClick={(e) => (
           <MyModal

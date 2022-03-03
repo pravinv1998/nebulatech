@@ -1,4 +1,4 @@
-#app {
+/* #app {
   height: 100%;
 }
 html,
@@ -27,7 +27,7 @@ body {
   background: transparent;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+/* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -54,4 +54,26 @@ body {
   margin-right: auto;
 
   /* background-color: #fff; */
+/* }  */
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .slide {
+  height: 60vh;
+  /* padding: 2rem; */
+}
+
+.carousel .slide img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.image {
+  margin: 0 auto;
+  height: 80%;
+  width: auto;
 }

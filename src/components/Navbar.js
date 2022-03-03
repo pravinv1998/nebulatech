@@ -54,8 +54,8 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap  w-full h-full sticky top-0 px-1 md:px-8   backdrop-blur-sm bg-slate-500/30  items-center justify-between ">
-        <div className="flex text-sky-50 items-center justify-start text-1xl  flex-1 flex-wrap ">
+      <div className="flex flex-wrap shadow-lg shadow-slate-400/50  w-full h-full sticky top-0 px-1 md:px-8   backdrop-blur-sm bg-slate-500/30  items-center justify-between ">
+        <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
             <img className=" h-[70px] " src={logo} alt="logo" />{" "}
           </Link>
@@ -81,7 +81,7 @@ function Navbar() {
           <Link to="login">
             <button
               type="button"
-              className=" transation_text text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
+              className=" shadow-lg shadow-slate-400/50 transation_text text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
             >
               Login
             </button>{" "}
