@@ -4,13 +4,17 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 const Login = () => {
   return (
     // shadow-lg shadow-slate-400/50 backdrop-blur-sm bg-primary/30 rounded-lg
-    <div className="flex w-full h-screen  flex-col flex-wrap items-center mt-12   ">
-      <div className=" flex w-full h-full justify-center items-center shadow-lg shadow-slate-400/50 backdrop-blur-sm bg-primary/30 rounded-lg">
-        <div className=" w-4/5 md:w-2/5 h-4/5 flex flex-col items-center justify-center">
-          <h1 className="font-bold  mt-10 text-2xl font-mono ">Login Page </h1>
+    <div className="flex w-full h-screen  flex-col flex-wrap items-center p-8  ">
+      <div className=" grid grid-cols-1  md:grid-cols-2 place-items-center w-full h-full shadow-lg shadow-slate-400/50 backdrop-blur-sm bg-primary/30 rounded-lg">
+        <div className=" w-4/5 md:w-2/5 h-4/5 border-b-2 md:border-b-0 md:border-r-2 border-cyan-50 flex flex-col items-center justify-center">
+          <h1 className="font-bold text-cyan-50  mt-10 text-2xl font-mono ">
+            Login Page{" "}
+          </h1>
           <div className="flex m-4 mt-4 flex-col items-start ">
             <div>
-              <h1 className="font-mono text-1xl bottom-0">Email</h1>
+              <h1 className="font-mono text-1xl text-cyan-50 bottom-0">
+                Email
+              </h1>
               <input
                 type="text"
                 placeholder="example@gmail.com"
@@ -21,7 +25,9 @@ const Login = () => {
               />
             </div>
             <div>
-              <h1 className="font-mono text-1xl bottom-0">Password</h1>
+              <h1 className="font-mono text-1xl text-cyan-50 bottom-0">
+                Password
+              </h1>
               <input
                 type="password"
                 placeholder="**********"
@@ -81,9 +87,14 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center items-start p-4 text-cyan-50">
           {" "}
-          <h1 className="text-3xl">hi</h1>{" "}
+          <h1 className="text-1xl md:text-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
+            reiciendis quia! Non voluptate sapiente, expedita assumenda itaque
+            debitis porro accusamus exercitationem. Voluptates perspiciatis ab,
+            nobis consectetur saepe doloribus quidem enim!
+          </h1>{" "}
         </div>
       </div>
     </div>

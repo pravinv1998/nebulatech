@@ -43,7 +43,7 @@ const Products = () => {
   return (
     <div className="w-full h-full  bg-transparent flex flex-col items-center justify-around  p-4">
       {" "}
-      <h1 className="font-sans text-3xl mb-8 items-center p-4 rounded-md backdrop-blur-sm bg-white/30 text-cyan-50">
+      <h1 className="font-sans text-1xl md:text-3xl mb-8 items-center p-4 rounded-md  text-cyan-50">
         {" "}
         Our Products{" "}
       </h1>

@@ -70,7 +70,7 @@ const Services = () => {
         autoPlay={true}
       >
         {Data.map((data, i) => (
-          <div className="image" key={i}>
+          <div className="image " key={i}>
             <img src={data.image} />
             <p className="text-slate-50 "> {data.name} </p>
           </div>
