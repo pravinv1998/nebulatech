@@ -1,12 +1,115 @@
 import React from "react";
+import erp from "../assets/img/1.png";
+import custom from "../assets/img/2.png";
+import web from "../assets/img/3.png";
+import product from "../assets/img/4.png";
+import digital from "../assets/img/5.png";
+import desktop from "../assets/img/6.png";
+import android from "../assets/img/7.png";
+import ios from "../assets/img/8.png";
+import manpower from "../assets/img/9.png";
+import cloud from "../assets/img/11.png";
+import about from "../assets/img/about.jpg";
+
+import mobile from "../assets/img/17.png";
+import tech from "../assets/img/15.jpg";
+
+import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
+const Data = [
+  {
+    id: 1,
+    image: erp,
+    name: "ERP Service",
+  },
+
+  {
+    id: 2,
+    image: product,
+    name: "Product Development",
+  },
+  {
+    id: 3,
+    image: digital,
+    name: "Digital Marketing",
+  },
+
+  {
+    id: 4,
+    image: android,
+    name: "Mobile Application",
+  },
+
+  {
+    id: 5,
+    image: manpower,
+    name: "HR Solutions",
+  },
+];
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-screen">
-      <div className="w-">
-        <h1 className="text-5xl text-center justify-center text-cyan-50 ">
-          About Page
+    <div className="w-screen h-full">
+      <div
+        style={{ backgroundImage: `url( ${about})` }}
+        className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
+      >
+        <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-900 ">
+          About Us
         </h1>
+      </div>
+      <div id="blogs" className="p-10">
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
+          {Data.map((data) => (
+            <div className=" flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-300/50 p-8  ">
+              <div className="flex justify-center items-center">
+                <img
+                  className="rounded-xl  w-16 h-16 fill-slate-900 "
+                  src={data.image}
+                />
+              </div>
+
+              <div className="bottom-0">
+                <h1 className="text-2xl mt-6 text-slate-900 font-bold">
+                  {" "}
+                  {data.name}{" "}
+                </h1>
+
+                <p className="mt-3 text-slate-900 text-sm">
+                  Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
+                  Learning, Keep Working hard!!!
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
+          <div>
+            <img src={tech} className="rounded-xl" />
+          </div>
+
+          <div className="flex flex-col justify-center align-middle md:p-8 p-3">
+            <h1 className="text-2xl hover:underline">HR Solution</h1>
+            <p className="text-sm mt-4">
+              Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
+              Learning, Keep Working hard!!!
+            </p>
+          </div>
+        </div>
+
+        <div className="  grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
+          <div>
+            <img src={mobile} className="rounded-xl" />
+          </div>
+
+          <div className="flex flex-col justify-center align-middle md:p-8 p-3">
+            <h1 className="text-2xl hover:underline">Google SEO Management</h1>
+            <p className="text-sm mt-4">
+              Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
+              Learning, Keep Working hard!!!
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -5,14 +5,14 @@ const Login = () => {
   return (
     // shadow-lg shadow-slate-400/50 backdrop-blur-sm bg-primary/30 rounded-lg
     <div className="flex w-full h-screen  flex-col flex-wrap items-center p-8  ">
-      <div className=" grid grid-cols-1  md:grid-cols-2 place-items-center w-full h-full shadow-lg shadow-slate-400/50 backdrop-blur-sm bg-primary/30 rounded-lg">
-        <div className=" w-4/5 md:w-2/5 h-4/5 border-b-2 md:border-b-0 md:border-r-2 border-cyan-50 flex flex-col items-center justify-center">
-          <h1 className="font-bold text-cyan-50  mt-10 text-2xl font-mono ">
+      <div className=" grid grid-cols-1 p-4 md:grid-cols-2 place-items-center w-full h-full shadow-lg shadow-slate-400/50  bg-slate-300/30 rounded-lg">
+        <div className=" w-full  md:w-2/5 h-4/5 flex flex-col items-center justify-center">
+          <h1 className="font-bold text-slate-900  mt-10 text-2xl font-mono ">
             Login Page{" "}
           </h1>
           <div className="flex m-4 mt-4 flex-col items-start ">
             <div>
-              <h1 className="font-mono text-1xl text-cyan-50 bottom-0">
+              <h1 className="font-mono text-1xl text-slate-900 bottom-0">
                 Email
               </h1>
               <input
@@ -25,7 +25,7 @@ const Login = () => {
               />
             </div>
             <div>
-              <h1 className="font-mono text-1xl text-cyan-50 bottom-0">
+              <h1 className="font-mono text-1xl text-slate-900 bottom-0">
                 Password
               </h1>
               <input
@@ -87,9 +87,9 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-start p-4 text-cyan-50">
+        <div className="flex  w-full h-full rounded-md flex-col justify-center items-start p-4 text-slate-900">
           {" "}
-          <h1 className="text-1xl md:text-2xl">
+          <h1 className="text-xl md:text-1xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
             reiciendis quia! Non voluptate sapiente, expedita assumenda itaque
             debitis porro accusamus exercitationem. Voluptates perspiciatis ab,

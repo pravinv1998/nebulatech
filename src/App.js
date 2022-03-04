@@ -41,7 +41,7 @@ function App() {
   };
   return (
     <div
-      className="brightness-125 w-screen h-full bg-no-repeat bg-cover bg-fixed bg-right "
+      className="brightness-125 w-screen h-full bg-gradient-to-r from-blue-200 to-blue-100 bg-no-repeat bg-cover bg-fixed bg-right "
       style={{ backgroundImage: `url( ${galaxy2})` }}
     >
       {/* <Sidebar /> */}
@@ -49,6 +49,8 @@ function App() {
       {/* <Navbar /> */}
       <Routes>
         <Route path="/career" element={<Career />} />
+        <Route path="/whoweare" element={<WhoWeAre />} />
+        <Route path="/service" element={<Services />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />

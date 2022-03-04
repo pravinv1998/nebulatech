@@ -9,7 +9,7 @@ const WhoWeAre = () => {
         // style={{ backgroundImage: `url( ${who})` }}
         className=" bg-no-repeat bg-cover bg-fixed bg-transparent w-full h-full  "
       >
-        <div className=" rounded-md   backdrop-blur-sm bg-slate-500/30 p-10 py-16 space-x-4  text-slate-50 flex  flex-col items-start  justify-around">
+        <div className=" rounded-md   bg-slate-300/20 p-10 py-16 space-x-4  text-slate-100 flex  flex-col items-start  justify-around">
           <h1 className="item-center justify-center font-mono font-bold text-2xl md:text-4xl">
             Who We Are
           </h1>

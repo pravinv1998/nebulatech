@@ -54,7 +54,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap shadow-lg shadow-slate-400/50  w-full h-full sticky top-0 px-1 md:px-8   backdrop-blur-sm bg-slate-500/30  items-center justify-between ">
+      <div className="flex flex-wrap shadow-lg shadow-slate-400/50  w-full h-full sticky top-0 px-1 md:px-8 bg-primary/50  items-center justify-between ">
         <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
             <img className=" h-[70px] " src={logo} alt="logo" />{" "}

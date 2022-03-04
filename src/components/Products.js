@@ -7,57 +7,27 @@ import showroom from "../assets/products/showroom.png";
 import society from "../assets/products/society.png";
 import wheel from "../assets/products/wheel.png";
 
-const Data = [
-  {
-    id: 1,
-    image: dairy,
-    name: "College ERP",
-  },
-  {
-    id: 2,
-    image: wheel,
-    name: "Construction ERP Application",
-  },
-  {
-    id: 3,
-    image: dairy,
-    name: "Milk Bank System",
-  },
-  {
-    id: 4,
-    image: wheel,
-    name: "Showroom ERP Application",
-  },
-  {
-    id: 5,
-    image: dairy,
-    name: "Society Management System",
-  },
-  {
-    id: 6,
-    image: wheel,
-    name: "Garage On Wheel",
-  },
-];
+import Data from "./Data";
+
 const Products = () => {
   return (
     <div className="w-full h-full  bg-transparent flex flex-col items-center justify-around  p-4">
       {" "}
-      <h1 className="font-sans text-1xl md:text-3xl mb-8 items-center p-4 rounded-md  text-cyan-50">
+      <h1 className="font-sans text-1xl md:text-3xl mb-8 items-center p-4 rounded-md  text-cyan-100">
         {" "}
         Our Products{" "}
       </h1>
       <div className="grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full h-full ">
         {Data.map((arrVal, i) => (
           <div
-            className="flex flex-col rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500 backdrop-blur-sm bg-white/40   flex-wrap items-center justify-between  w-[90%] h-[100%]"
+            className="flex flex-col  rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  bg-slate-300/20   flex-wrap items-center justify-between  w-[90%] h-[100%]"
             key={arrVal.id}
           >
             <img
               className="w-70 h-70 top-0 hover:scale-125 duration-500  mb-4  "
               src={arrVal.image}
             />
-            <h4 className="font-mono text-2xl text-cyan-50 bottom-0">
+            <h4 className="font-mono text-1xl md:text-2xl text-cyan-100 bottom-0">
               {" "}
               {arrVal.name}{" "}
             </h4>

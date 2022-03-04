@@ -6,8 +6,8 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const LandingPage = () => {
   return (
-    <div className="grid place-content-center  grid-cols-1 md:grid-cols-2 text-sky-50 pt-2 md:py-8 justify-around flex-wrap items-center  w-full h-full bg-transparent">
-      <div className="flex  justify-center  items-center">
+    <div className="grid place-content-center  grid-cols-1 md:grid-cols-2 text-sky-100 pt-2 md:py-8 justify-around flex-wrap items-center  w-full h-full bg-slate-300/20">
+      <div className="flex  justify-center  items-center  wow animate__animated animate__fadeInLeft">
         <div>
           <h1 className=" flex-wrap text-2xl md:text-4xl lg:text-6xl font-mono drop-shadow-2xl  ">
             Nebula
@@ -65,7 +65,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center  items-center">
+      <div className="flex justify-center  items-center wow animate__animated animate__fadeInRight">
         <img src={icon} className="mt-4 w-[50%] h-[50%]  " alt="nebula_tech" />
       </div>
     </div>
