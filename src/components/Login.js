@@ -8,15 +8,28 @@ const Login = () => {
       <div className=" grid grid-cols-1 p-4 md:grid-cols-2 place-items-center w-full h-full shadow-lg shadow-slate-400/50  bg-slate-300/30 rounded-lg">
         <div className=" w-full  md:w-2/5 h-4/5 flex flex-col items-center justify-center">
           <h1 className="font-bold text-slate-900  mt-10 text-2xl font-mono ">
-            Login Page{" "}
+            Send Message
           </h1>
           <div className="flex m-4 mt-4 flex-col items-start ">
+            <div>
+              <h1 className="font-mono text-1xl text-slate-900 bottom-0">
+                Name
+              </h1>
+              <input
+                type="text"
+                placeholder="example@gmail.com"
+                className="p-2 w-full rounded-md mb-2"
+                name="username"
+                id="username"
+                required
+              />
+            </div>
             <div>
               <h1 className="font-mono text-1xl text-slate-900 bottom-0">
                 Email
               </h1>
               <input
-                type="text"
+                type="email"
                 placeholder="example@gmail.com"
                 className="p-2 w-full rounded-md mb-2"
                 name="username"
@@ -37,8 +50,21 @@ const Login = () => {
                 required
               />
             </div>
+            <div>
+              <h1 className="font-mono text-1xl text-slate-900 bottom-0">
+                Message
+              </h1>
+              <textarea
+                type="password"
+                placeholder="share your view..."
+                className="p-2 w-full rounded-md mb-2"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
             <button className="p-2 hover:bg-gradient-to-l hover:from-blue-500 px-4 rounded-md mb-4 mt-2  font-bold bg-slate-50  ">
-              Login
+              SEND
             </button>
             <div className="flex mt-2 items-center flex-wrap ">
               <div className="mr-4 hover:scale-110 ">

@@ -83,7 +83,7 @@ function Navbar() {
               type="button"
               className=" shadow-lg shadow-slate-400/50 transation_text text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
             >
-              Login
+              Contact Us
             </button>{" "}
           </Link>
 
