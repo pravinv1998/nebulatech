@@ -57,7 +57,8 @@ const Data = [
 const Services = () => {
   return (
     <div
-      className=" md:p-10 bg-slate-300/20 text-2xl"
+      data-aos="flip-down"
+      className=" md:p-10 bg-gradient-to-r from-try to-info text-2xl"
       // style={{ backgroundImage: `url( ${img1})` }}
     >
       <h1 className="font-sans flex justify-center text-3xl mb-8 text-cyan-100">
@@ -72,9 +73,18 @@ const Services = () => {
         autoPlay={true}
       >
         {Data.map((data, i) => (
-          <div className="image " key={i}>
-            <img src={data.image} />
-            <p className="text-slate-100 "> {data.name} </p>
+          <div
+            style={{ backgroundImage: `url( ${data.image})` }}
+            className="image bg-no-repeat bg-cover bg-fixed bg-right"
+            key={i}
+          >
+            {/* <img src={data.image} /> */}
+            <div className="flex justify-center items-center w-full h-full ">
+              <p className="text-slate-100 bg-try/60 font-bold rounded-lg p-4 text-5xl ">
+                {" "}
+                {data.name}{" "}
+              </p>
+            </div>
           </div>
         ))}
       </Carousel>

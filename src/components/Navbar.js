@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import "../App.css";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/img/NebulaWhite.png";
@@ -54,10 +55,14 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-wrap shadow-lg shadow-slate-400/50  w-full h-full sticky top-0 px-1 md:px-8 bg-primary/50  items-center justify-between ">
+      <div className=" animate-nav flex flex-wrap shadow-lg bg-gradient-to-r from-try to-info shadow-slate-400/20  w-full h-full sticky fixed-top top-0 px-1 md:px-8   items-center justify-between ">
         <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
           <Link to="/">
-            <img className=" h-[70px] " src={logo} alt="logo" />{" "}
+            <img
+              className=" z-100 h-[70px] animate-navafter "
+              src={logo}
+              alt="logo"
+            />{" "}
           </Link>
           {/* <Link to="career" className="mx-4 transation_text">
             Career
@@ -69,7 +74,7 @@ function Navbar() {
             AboutUS ///////////////////
           </Link> */}
         </div>
-        <div className=" flex flex-wrap justify-around pr-2  ">
+        <div className=" flex  justify-around pr-2  ">
           {/* <Link to="/">
             <button
               type="button"
@@ -81,7 +86,7 @@ function Navbar() {
           <Link to="login">
             <button
               type="button"
-              className=" shadow-lg shadow-slate-400/50 transation_text text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
+              className=" transation_text animate-navafter text-cyan-50 bg-transparent   from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md "
             >
               Contact Us
             </button>{" "}

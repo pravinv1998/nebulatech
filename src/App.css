@@ -62,7 +62,7 @@ body {
 }
 
 .carousel .slide {
-  height: 40vh;
+  height: 60vh;
   /* padding: 2rem; */
 }
 
@@ -84,4 +84,18 @@ body {
   margin: 0 auto;
   height: 80%;
   width: auto;
+}
+
+.nav {
+  animation: nav-load 400ms ease-in;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -48,7 +48,7 @@ const Data = [
 
 const AboutUs = () => {
   return (
-    <div className="w-screen h-full">
+    <div className="w-screen h-full ">
       <div
         style={{ backgroundImage: `url( ${about})` }}
         className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
@@ -59,8 +59,12 @@ const AboutUs = () => {
       </div>
       <div id="blogs" className="p-10">
         <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
-          {Data.map((data) => (
-            <div className=" flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-300/50 p-8  ">
+          {Data.map((data, i) => (
+            <div
+              key={i}
+              data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
+              className=" hover:scale-110 flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-300/50 p-8  "
+            >
               <div className="flex justify-center items-center">
                 <img
                   className="rounded-xl  w-16 h-16 fill-slate-900 "
@@ -84,11 +88,14 @@ const AboutUs = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
-          <div>
+          <div data-aos="fade-right">
             <img src={tech} className="rounded-xl" />
           </div>
 
-          <div className="flex flex-col justify-center align-middle md:p-8 p-3">
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle md:p-8 p-3"
+          >
             <h1 className="text-2xl hover:underline">HR Solution</h1>
             <p className="text-sm mt-4">
               Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
@@ -99,10 +106,13 @@ const AboutUs = () => {
 
         <div className="  grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
           <div>
-            <img src={mobile} className="rounded-xl" />
+            <img data-aos="fade-right" src={mobile} className="rounded-xl" />
           </div>
 
-          <div className="flex flex-col justify-center align-middle md:p-8 p-3">
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle md:p-8 p-3"
+          >
             <h1 className="text-2xl hover:underline">Google SEO Management</h1>
             <p className="text-sm mt-4">
               Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep

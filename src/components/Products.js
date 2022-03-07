@@ -20,7 +20,8 @@ const Products = () => {
       <div className="grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full h-full ">
         {Data.map((arrVal, i) => (
           <div
-            className="flex flex-col  rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  bg-slate-300/20   flex-wrap items-center justify-between  w-[90%] h-[100%]"
+            data-aos={i % 2 === 0 ? "flip-left" : "flip-right"}
+            className="flex flex-col  rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  bg-yellow-500/70   flex-wrap items-center justify-between  w-[90%] h-[100%]"
             key={arrVal.id}
           >
             <img

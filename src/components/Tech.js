@@ -10,9 +10,10 @@ import MyModal from "./MyModal";
 
 const Tech = () => {
   return (
-    <div className="flex  overflow-x-auto flex-wrap   items-center justify-around  pt-10 bg-slate-300/20 p-8 ">
+    <div className="flex rounded-br-full rounded-bl-full bg-gradient-to-r from-try to-info h-full w-screen  overflow-x-auto flex-wrap   items-center justify-around  pt-10  p-8 ">
       <img
-        className=" w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125   duration-500"
+        data-aos="fade-right"
+        className=" w-20 animate-nav md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125   duration-500"
         src={java}
         onClick={(e) => (
           <MyModal
@@ -23,6 +24,7 @@ const Tech = () => {
         alt="java"
       />
       <img
+        data-aos="fade-down"
         className="w-20 md:w-24 h-auto shadow-lg  shadow-slate-400/50 rounded-xl hover:scale-125  duration-500"
         src={servicenow}
         onClick={(e) => (
@@ -34,6 +36,7 @@ const Tech = () => {
         alt="php"
       />
       <img
+        data-aos="fade-up"
         className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
         src={ui}
         onClick={(e) => (
@@ -45,6 +48,7 @@ const Tech = () => {
         alt="javascript"
       />
       <img
+        data-aos="fade-left"
         className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
         src={selenium}
         onClick={(e) => (

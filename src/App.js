@@ -25,6 +25,7 @@ import Products from "./components/Products";
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
   // className="w-full h-full" style={{ backgroundImage: `url( ${img2})` }}
+  // bg-gradient-to-r from-blue-200 to-blue-100
 
   const Home = () => {
     return (
@@ -36,13 +37,16 @@ function App() {
         <Services />
         <ClientData />
         <Clients />
+        <Products />
+        <AboutUs />
+        <Login />
       </div>
     );
   };
   return (
     <div
-      className="brightness-125 w-screen h-full bg-gradient-to-r from-blue-200 to-blue-100 bg-no-repeat bg-cover bg-fixed bg-right "
-      style={{ backgroundImage: `url( ${galaxy2})` }}
+      className=" w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat bg-cover bg-fixed bg-right "
+      // style={{ backgroundImage: `url( ${galaxy2})` }}
     >
       {/* <Sidebar /> */}
       <Navbar />

@@ -6,16 +6,16 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const LandingPage = () => {
   return (
-    <div className="grid place-content-center  grid-cols-1 md:grid-cols-2 text-sky-100 pt-2 md:py-8 justify-around flex-wrap items-center  w-full h-full bg-slate-300/20">
-      <div className="flex  justify-center  items-center  wow animate__animated animate__fadeInLeft">
+    <div className="grid place-content-center bg-gradient-to-r from-secondry via-try to-info grid-cols-1 md:grid-cols-2 text-sky-100 pt-2 md:py-8   w-full md:h-screen ">
+      <div className="flex animate-navafter justify-center  items-center  ">
         <div>
-          <h1 className=" flex-wrap text-2xl md:text-4xl lg:text-6xl font-mono drop-shadow-2xl  ">
+          <h1 className=" text-4xl  md:text-8xl font-bold  drop-shadow-2xl  ">
             Nebula
           </h1>
-          <h1 className="flex-wrap text-3xl md:text-5xl lg:text-7xl font-mono drop-shadow-2xl  ">
+          <h1 className=" text-4xl md:text-8xl font-bold drop-shadow-2xl  ">
             Technology
           </h1>
-          <h1 className="flex-wrap text-1xl md:text-2xl font-mono italic">
+          <h1 className=" text-2xl   md:text-4xl font-bold italic">
             Where creation happens...
           </h1>
           <div className="flex mt-2 items-center flex-wrap ">
@@ -65,8 +65,12 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center  items-center wow animate__animated animate__fadeInRight">
-        <img src={icon} className="mt-4 w-[50%] h-[50%]  " alt="nebula_tech" />
+      <div className="flex  animate-pulse h-full w-full justify-center  items-center ">
+        <img
+          src={icon}
+          className="mt-4 w-[60%] animate-company_logo hover:fill-pink-700 "
+          alt="nebula_tech"
+        />
       </div>
     </div>
   );
