@@ -45,7 +45,7 @@ function App() {
   };
   return (
     <div
-      className=" w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat bg-cover bg-fixed bg-right "
+      className="brightness-110 w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat bg-cover bg-fixed bg-right "
       // style={{ backgroundImage: `url( ${galaxy2})` }}
     >
       {/* <Sidebar /> */}

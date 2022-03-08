@@ -1,22 +1,23 @@
 import React from "react";
 import back from "../assets/img/back.png";
 import icon from "../assets/lngico/icon.png";
+import "../App.css";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const LandingPage = () => {
   return (
-    <div className="grid place-content-center bg-gradient-to-r from-secondry via-try to-info grid-cols-1 md:grid-cols-2 text-sky-100 pt-2 md:py-8   w-full md:h-screen ">
+    <div className="grid place-content-center bg-slate-200  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen ">
       <div className="flex animate-navafter justify-center  items-center  ">
         <div>
-          <h1 className=" text-4xl  md:text-8xl font-bold  drop-shadow-2xl  ">
-            Nebula
+          <h1 className=" flex items-center text-4xl  md:text-8xl font-bold  drop-shadow-2xl  ">
+            N <img src={icon} className="w-16 h-16 " alt="logo" /> bula
           </h1>
-          <h1 className=" text-4xl md:text-8xl font-bold drop-shadow-2xl  ">
+          <h1 className=" text-3xl md:text-6xl font-bold bg-red-800 text-slate-50 uppercase p-2 drop-shadow-2xl  ">
             Technology
           </h1>
-          <h1 className=" text-2xl   md:text-4xl font-bold italic">
-            Where creation happens...
+          <h1 className=" text-3xl w-full font-Dynalight  md:text-4xl font-bold italic">
+            where creation happens...
           </h1>
           <div className="flex mt-2 items-center flex-wrap ">
             <div className="mr-4 hover:scale-110 ">
@@ -65,12 +66,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex  animate-pulse h-full w-full justify-center  items-center ">
-        <img
-          src={icon}
-          className="mt-4 w-[60%] animate-company_logo hover:fill-pink-700 "
-          alt="nebula_tech"
-        />
+      <div className="flex animate-company_logo  animate-pulse h-full w-full justify-center  items-center ">
+        <img src={icon} className="mt-4 w-[60%] logo " alt="nebula_tech" />
       </div>
     </div>
   );

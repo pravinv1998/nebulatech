@@ -16,6 +16,7 @@ module.exports = {
         nav_item_middle: "nav-load 400ms ease-in",
         navafter: "name 700ms ease-in 400ms",
         company_logo: "logo 700ms ease-in 400ms",
+        // spin: "spin 1s infinite 500ms",
       },
       keyframes: {
         "nav-load": {
@@ -30,6 +31,10 @@ module.exports = {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
+      },
+      fontFamily: {
+        Sansita: ["Sansita Swashed", "cursive"],
+        Dynalight: ["Dynalight", " cursive"],
       },
     },
   },

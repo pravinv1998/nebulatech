@@ -10,57 +10,67 @@ import MyModal from "./MyModal";
 
 const Tech = () => {
   return (
-    <div className="flex rounded-br-full rounded-bl-full bg-gradient-to-r from-try to-info h-full w-screen  overflow-x-auto flex-wrap   items-center justify-around  pt-10  p-8 ">
-      <img
-        data-aos="fade-right"
-        className=" w-20 animate-nav md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125   duration-500"
-        src={java}
-        onClick={(e) => (
-          <MyModal
-            name={"Java"}
-            data={"J2EE, Spring Framework, Microservices, Hibernate, Android"}
+    <div className="flex items-center justify-center w-screen [90vw]">
+      <div className="grid gap-5 md:gap-0 grid-cols-1 md:grid-cols-4  place-items-center  bg-gradient-to-r from-try to-info h-full w-full p-8 ">
+        <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
+          <img
+            data-aos="fade-right"
+            className=" w-20 animate-nav md:w-24 rounded-xl h-auto hover:scale-125   duration-500"
+            src={java}
+            alt="java"
           />
-        )}
-        alt="java"
-      />
-      <img
-        data-aos="fade-down"
-        className="w-20 md:w-24 h-auto shadow-lg  shadow-slate-400/50 rounded-xl hover:scale-125  duration-500"
-        src={servicenow}
-        onClick={(e) => (
-          <MyModal
-            name={"Service Now"}
-            data={"Larvel Framework, Codeignite Framework"}
+
+          <h1
+            data-aos="fade-left"
+            className="text-center text-slate-900 font-sans font-semibold p-2 "
+          >
+            J2EE, Spring Framework, Microservices, Hibernate, Android
+          </h1>
+        </div>
+        <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
+          <img
+            data-aos="fade-down"
+            className="w-20 md:w-24 h-auto  rounded-xl hover:scale-125  duration-500"
+            src={servicenow}
+            alt="php"
           />
-        )}
-        alt="php"
-      />
-      <img
-        data-aos="fade-up"
-        className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
-        src={ui}
-        onClick={(e) => (
-          <MyModal
-            name={"JavaScript"}
-            data={"ReactJs, Angular, React Native"}
+          <h1
+            data-aos="fade-up"
+            className="text-center text-slate-900 font-sans font-semibold p-2 "
+          >
+            J2EE, Spring Framework, Microservices, Hibernate, Android
+          </h1>
+        </div>
+
+        <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
+          <img
+            data-aos="fade-up"
+            className="w-20 md:w-24 0 rounded-xl h-auto hover:scale-125  duration-500"
+            src={ui}
+            alt="javascript"
           />
-        )}
-        alt="javascript"
-      />
-      <img
-        data-aos="fade-left"
-        className="w-20 md:w-24 shadow-lg shadow-slate-400/50 rounded-xl h-auto hover:scale-125  duration-500"
-        src={selenium}
-        onClick={(e) => (
-          <MyModal
-            name={"Selenium"}
-            data={
-              "Selenium is an open-source umbrella project for a range of tools and libraries aimed at supporting web browser automation.Larvel Framework, Codeignite Framework"
-            }
+          <h1
+            data-aos="fade-down"
+            className="text-center text-slate-900 font-sans font-semibold p-2 "
+          >
+            J2EE, Spring Framework, Microservices, Hibernate, Android
+          </h1>
+        </div>
+        <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
+          <img
+            data-aos="fade-left"
+            className="w-20 md:w-24  rounded-xl h-auto hover:scale-125  duration-500"
+            src={selenium}
+            alt="serlenium"
           />
-        )}
-        alt="serlenium"
-      />
+          <h1
+            data-aos="fade-right"
+            className="text-center text-slate-900 font-sans font-semibold p-2 "
+          >
+            J2EE, Spring Framework, Microservices, Hibernate, Android
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };

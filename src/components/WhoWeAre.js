@@ -10,7 +10,7 @@ const WhoWeAre = () => {
         className="flex justify-center items-center  bg-no-repeat bg-cover bg-fixed   w-full h-full  "
       >
         <div
-          data-aos="zoom-out"
+          data-aos="zoom-in"
           className="h-[70vh] w-[90vw] grid grid-cols-1 md:grid-cols-2 my-4 rounded-xl bg-yellow-500 p-4 align-middle place-items-center"
         >
           <div data-aos="fade-right">
@@ -19,10 +19,10 @@ const WhoWeAre = () => {
 
           <div
             data-aos="fade-left"
-            className="flex flex-col justify-center align-middle md:p-8 p-3"
+            className="flex flex-col justify-center align-middle md:p-8 p-4 "
           >
             <h1 className="text-2xl hover:underline">Who We Are</h1>
-            <p className="text-sm mt-4">
+            <p className="text-sm mt-2 p-2 overflow-hidden">
               We are a friendly, dynamic, knowledgeable, experienced and
               committed people works in the Geo-Spatial Domain. We put clients
               at the heart of what we do, though our services go far beyond

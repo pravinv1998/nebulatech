@@ -28,7 +28,7 @@ const Products = () => {
               className="w-70 h-70 top-0 hover:scale-125 duration-500  mb-4  "
               src={arrVal.image}
             />
-            <h4 className="font-mono text-1xl md:text-2xl text-cyan-100 bottom-0">
+            <h4 className="font-mono text-center text-1xl md:text-2xl text-cyan-100 bottom-0">
               {" "}
               {arrVal.name}{" "}
             </h4>
