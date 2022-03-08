@@ -9,14 +9,14 @@ const LandingPage = () => {
   return (
     <div className="grid place-content-center bg-slate-200  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen ">
       <div className="flex animate-navafter justify-center  items-center  ">
-        <div>
-          <h1 className=" flex items-center text-4xl  md:text-8xl font-bold  drop-shadow-2xl  ">
-            N <img src={icon} className="w-16 h-16 " alt="logo" /> bula
+        <div className="drop-shadow-3xl  ">
+          <h1 className=" flex items-center text-4xl  md:text-8xl font-extrabold   ">
+            N <img src={icon} className="w-16 h-16 bottom-0" alt="logo" /> bula
           </h1>
           <h1 className=" text-3xl md:text-6xl font-bold bg-red-800 text-slate-50 uppercase p-2 drop-shadow-2xl  ">
             Technology
           </h1>
-          <h1 className=" text-3xl w-full font-Dynalight  md:text-4xl font-bold italic">
+          <h1 className=" pl-6 text-center text-3xl w-full font-Dynalight text-sky-800 md:text-4xl font-bold italic">
             where creation happens...
           </h1>
           <div className="flex mt-2 items-center flex-wrap ">

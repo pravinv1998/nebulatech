@@ -9,8 +9,8 @@ const Login = () => {
         <div className=" w-full  flex flex-col items-center justify-center">
           <div className="bg-blue-200/30 shadow-lg shadow-slate-400/40 grid grid-cols-1 rounded-md  gap-4 p-8  ">
             <div className="flex items-center justify-center">
-              <h1 className="font-bold text-slate-900   text-2xl font-mono ">
-                Send Message
+              <h1 className="font-bold text-center text-slate-900   text-2xl font-mono ">
+                Contact Us
               </h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-2 ">

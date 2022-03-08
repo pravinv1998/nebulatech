@@ -21,6 +21,8 @@ import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
 import Sidebar from "./components/Sidebar";
 import Products from "./components/Products";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollButton from "./components/ScrollButton";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -48,6 +50,7 @@ function App() {
       className="brightness-110 w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat bg-cover bg-fixed bg-right "
       // style={{ backgroundImage: `url( ${galaxy2})` }}
     >
+      <ScrollToTop />
       {/* <Sidebar /> */}
       <Navbar />
       {/* <Navbar /> */}
@@ -55,13 +58,14 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/whoweare" element={<WhoWeAre />} />
         <Route path="/service" element={<Services />} />
-        <Route path="/contactus" element={<Login />} />
+        <Route path="/contactus" element={<Login heading="Contact Us" />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
+      <ScrollButton />
     </div>
   );
 }
