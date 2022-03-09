@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
+import background from "./assets/back.png";
 
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -23,6 +24,7 @@ import Sidebar from "./components/Sidebar";
 import Products from "./components/Products";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollButton from "./components/ScrollButton";
+import Blog from "./components/Blog";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -37,8 +39,8 @@ function App() {
         <Tech />
         <WhoWeAre />
         <Services />
-        <ClientData />
-        <Clients />
+        {/* <ClientData />
+        <Clients /> */}
         <Products />
         <AboutUs />
         <Login />
@@ -47,8 +49,8 @@ function App() {
   };
   return (
     <div
-      className="brightness-110 w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat bg-cover bg-fixed bg-right "
-      // style={{ backgroundImage: `url( ${galaxy2})` }}
+      className=" w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-right "
+      style={{ backgroundImage: `url( ${background})` }}
     >
       <ScrollToTop />
       {/* <Sidebar /> */}
@@ -61,11 +63,12 @@ function App() {
         <Route path="/contactus" element={<Login heading="Contact Us" />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/blogs" element={<Blog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>
-      <Footer />
       <ScrollButton />
+      <Footer />
     </div>
   );
 }

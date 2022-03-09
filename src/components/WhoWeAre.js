@@ -11,7 +11,7 @@ const WhoWeAre = () => {
       >
         <div
           data-aos="zoom-in"
-          className="md:h-[70vh] w-[90vw] grid grid-cols-1 md:grid-cols-2 my-4 rounded-xl bg-yellow-500 p-4 align-middle place-items-center"
+          className="md:h-[70vh] w-[90vw] grid grid-cols-1 md:grid-cols-2 my-4 rounded-xl bg-blue-500/70 p-4 align-middle place-items-center"
         >
           <div data-aos="fade-right">
             <img src={who} className="rounded-xl md:w-full md:h-[60vh] " />

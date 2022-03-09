@@ -18,6 +18,7 @@ import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { Link } from "react-router-dom";
+import NoteIcon from "@mui/icons-material/Note";
 
 export default function Sidebar() {
   const [state, setState] = React.useState({
@@ -63,6 +64,24 @@ export default function Sidebar() {
           </ListItem>
         </Link>
         <Divider />
+        <Link to="products">
+          <ListItem button>
+            <ListItemIcon sx={{ color: "#F0F9FF" }}>
+              <LocalGroceryStoreIcon />
+            </ListItemIcon>
+            <ListItemText primary="Products" />
+          </ListItem>
+        </Link>
+        <Divider />
+        <Link to="blogs">
+          <ListItem button>
+            <ListItemIcon sx={{ color: "#F0F9FF" }}>
+              <NoteIcon />
+            </ListItemIcon>
+            <ListItemText primary="Blogs" />
+          </ListItem>
+        </Link>
+        <Divider />
         <Link to="career">
           <ListItem button>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
@@ -90,30 +109,6 @@ export default function Sidebar() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="products">
-          <ListItem button>
-            <ListItemIcon sx={{ color: "#F0F9FF" }}>
-              <LocalGroceryStoreIcon />
-            </ListItemIcon>
-            <ListItemText primary="Products" />
-          </ListItem>
-        </Link>
-        <Link to="whoweare">
-          <ListItem button>
-            <ListItemIcon sx={{ color: "#F0F9FF" }}>
-              <LocalGroceryStoreIcon />
-            </ListItemIcon>
-            <ListItemText primary="who" />
-          </ListItem>
-        </Link>
-        <Link to="service">
-          <ListItem button>
-            <ListItemIcon sx={{ color: "#F0F9FF" }}>
-              <LocalGroceryStoreIcon />
-            </ListItemIcon>
-            <ListItemText primary="ser" />
-          </ListItem>
-        </Link>
       </List>
     </Box>
   );
