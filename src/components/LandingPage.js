@@ -1,25 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import back from "../assets/img/back.png";
 import icon from "../assets/lngico/icon.png";
+import background from "../assets/back.png";
 import "../App.css";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const LandingPage = () => {
+  // const technology = ["Web App", "Mobile App", "Serverside App"];
+  // const [tech, setTech] = useState("");
+
+  // useEffect(() => {
+  //   let i = 0;
+  //   while (true) {
+  //     i++;
+  //     setTech(technology[i]);
+  //   }
+  // }, []);
+
   return (
-    <div className="grid place-content-center bg-slate-200  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen ">
+    <div
+      // style={{ backgroundImage: `url( ${background})` }}
+      className="bg-left-top bg-no-repeat  bg-auto backdrop-blur-sm    grid place-content-center bg-transparent  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen "
+    >
       <div className="flex animate-navafter justify-center  items-center  ">
-        <div>
-          <h1 className=" flex items-center text-4xl  md:text-8xl font-bold  drop-shadow-2xl  ">
-            N <img src={icon} className="w-16 h-16 " alt="logo" /> bula
+        <div className="drop-shadow-3xl  ">
+          <h1 className=" flex items-center text-4xl  md:text-8xl font-extrabold   ">
+            N <img src={icon} className="w-16 h-16 bottom-0" alt="logo" /> bula
           </h1>
           <h1 className=" text-3xl md:text-6xl font-bold bg-red-800 text-slate-50 uppercase p-2 drop-shadow-2xl  ">
             Technology
           </h1>
-          <h1 className=" text-3xl w-full font-Dynalight  md:text-4xl font-bold italic">
+          <h1 className=" pl-6 text-center text-3xl w-full font-Dynalight text-sky-500 md:text-4xl font-bold italic">
             where creation happens...
           </h1>
-          <div className="flex mt-2 items-center flex-wrap ">
+          {/* <div className="flex flex-col absolute bottom-[-50%] left-0 top-1/2  items-center flex-wrap ">
             <div className="mr-4 hover:scale-110 ">
               {" "}
               <SocialMediaIconsReact
@@ -63,11 +78,15 @@ const LandingPage = () => {
                 size="40"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="flex animate-company_logo  animate-pulse h-full w-full justify-center  items-center ">
-        <img src={icon} className="mt-4 w-[60%] logo " alt="nebula_tech" />
+      <div className="flex  logo animate-pulse h-full w-full justify-center  items-center ">
+        <img
+          src={icon}
+          className="mt-4 w-[60%]  animate-company_logo "
+          alt="nebula_tech"
+        />
       </div>
     </div>
   );

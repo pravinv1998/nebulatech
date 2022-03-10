@@ -10,7 +10,7 @@ import MyModal from "./MyModal";
 
 const Tech = () => {
   return (
-    <div className="flex items-center justify-center w-screen [90vw]">
+    <div className="flex items-center justify-center w-screen ">
       <div className="grid gap-5 md:gap-0 grid-cols-1 md:grid-cols-4  place-items-center  bg-gradient-to-r from-try to-info h-full w-full p-8 ">
         <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
           <img

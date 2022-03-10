@@ -11,7 +11,7 @@ const WhoWeAre = () => {
       >
         <div
           data-aos="zoom-in"
-          className="h-[70vh] w-[90vw] grid grid-cols-1 md:grid-cols-2 my-4 rounded-xl bg-yellow-500 p-4 align-middle place-items-center"
+          className="md:h-[70vh] w-[90vw] grid grid-cols-1 md:grid-cols-2 my-4 rounded-xl bg-blue-500/70 p-4 align-middle place-items-center"
         >
           <div data-aos="fade-right">
             <img src={who} className="rounded-xl md:w-full md:h-[60vh] " />
@@ -19,7 +19,7 @@ const WhoWeAre = () => {
 
           <div
             data-aos="fade-left"
-            className="flex flex-col justify-center align-middle md:p-8 p-4 "
+            className="flex flex-col text-cyan-100 justify-center items-center h-full md:p-8 p-4 "
           >
             <h1 className="text-2xl hover:underline">Who We Are</h1>
             <p className="text-sm mt-2 p-2 overflow-hidden">

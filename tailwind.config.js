@@ -10,6 +10,7 @@ module.exports = {
         secondry: "rgb(7,42,100)",
         info: "rgb(5,39,94)",
         try: "rgb(3,13,33)",
+        background: "rgb(242,242,242)",
       },
       animation: {
         nav: "nav-load 400ms ease-in",

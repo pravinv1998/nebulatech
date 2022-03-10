@@ -15,6 +15,8 @@ import mobile from "../assets/img/17.png";
 import tech from "../assets/img/15.jpg";
 
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
+import ClientData from "./ClientData";
+import Clients from "./Clients";
 const Data = [
   {
     id: 1,
@@ -50,10 +52,10 @@ const AboutUs = () => {
   return (
     <div className="w-screen h-full ">
       <div
-        style={{ backgroundImage: `url( ${about})` }}
+        // style={{ backgroundImage: `url( ${about})` }}
         className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
       >
-        <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-900 ">
+        <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-100 ">
           About Us
         </h1>
       </div>
@@ -63,7 +65,7 @@ const AboutUs = () => {
             <div
               key={i}
               data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
-              className=" hover:scale-110 flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-300/50 p-8  "
+              className=" hover:scale-110 flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-400 p-8  "
             >
               <div className="flex justify-center items-center">
                 <img
@@ -87,7 +89,7 @@ const AboutUs = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
+        <div className="grid grid-cols-1 text-cyan-100 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
           <div data-aos="fade-right">
             <img src={tech} className="rounded-xl" />
           </div>
@@ -104,7 +106,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="  grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-200/30">
+        <div className="  grid grid-cols-1 text-cyan-100 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
           <div>
             <img data-aos="fade-right" src={mobile} className="rounded-xl" />
           </div>
@@ -121,6 +123,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <ClientData />
+      <Clients />
     </div>
   );
 };
