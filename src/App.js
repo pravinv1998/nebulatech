@@ -25,6 +25,7 @@ import Products from "./components/Products";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollButton from "./components/ScrollButton";
 import Blog from "./components/Blog";
+<<<<<<< HEAD
 // import Main from "./components/Main";
 
 import earth from "./assets/earth.gif";
@@ -35,6 +36,8 @@ import NET from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
+=======
+>>>>>>> 75857997c6ace8ba861224cb6084a9745fe39906
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -59,7 +62,14 @@ function App() {
   };
 
   return (
+<<<<<<< HEAD
     <div className=" w-screen h-full backdrop-blur-xl  bg-bottom bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary   bg-cover bg-fixed  ">
+=======
+    <div
+      className=" w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-right "
+      style={{ backgroundImage: `url( ${background})` }}
+    >
+>>>>>>> 75857997c6ace8ba861224cb6084a9745fe39906
       <ScrollToTop />
       {/* <Sidebar /> */}
       <Navbar />
