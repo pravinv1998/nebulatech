@@ -19,11 +19,8 @@ const WhoWeAre = () => {
 
           <div
             data-aos="fade-left"
-<<<<<<< HEAD
             className="flex flex-col text-cyan-100 justify-center items-center h-full md:p-8 p-4 "
-=======
-            className="flex flex-col justify-center items-center h-full md:p-8 p-4 "
->>>>>>> 75857997c6ace8ba861224cb6084a9745fe39906
+            // className="flex flex-col justify-center items-center h-full md:p-8 p-4 "
           >
             <h1 className="text-2xl hover:underline">Who We Are</h1>
             <p className="text-sm mt-2 p-2 overflow-hidden">
