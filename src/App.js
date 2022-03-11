@@ -56,74 +56,76 @@ function App() {
   };
 
   return (
-    <div
-      className=" w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-bottom "
-      style={{ backgroundImage: `url( ${background})` }}
-    >
-      <ScrollToTop />
-      {/* <Sidebar /> */}
-      <Navbar />
-      {/* <Navbar /> */}
-      <div className="flex flex-col absolute  left-0 top-1/3">
-        <div className="flex flex-col fixed right-0 top-2/3 bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
-          <div className="mr-4 hover:scale-110 ">
-            {" "}
-            <SocialMediaIconsReact
-              borderColor="rgba(0,0,0,0.25)"
-              icon="github"
-              iconColor="rgba(255,255,255,1)"
-              backgroundColor="rgb(27,31,35)"
-              url="https://some-website.com/my-social-media-url"
-              size="50"
-            />
-          </div>
-          <div className="mr-4 hover:scale-110">
-            {" "}
-            <SocialMediaIconsReact
-              borderColor="rgba(0,0,0,0.25)"
-              icon="twitter"
-              iconColor="rgba(255,255,255,1)"
-              backgroundColor="rgba(26,166,233,1)"
-              url="https://some-website.com/my-social-media-url"
-              size="50"
-            />
-          </div>
-          <div className="mr-4 hover:scale-110">
-            {" "}
-            <SocialMediaIconsReact
-              borderColor="rgba(0,0,0,0.25)"
-              icon="linkedin"
-              iconColor="rgba(255,255,255,1)"
-              backgroundColor="rgb(0,119,181)"
-              url="https://some-website.com/my-social-media-url"
-              size="50"
-            />
-          </div>
-          <div className="mr-4 hover:scale-110">
-            <SocialMediaIconsReact
-              borderColor="rgba(0,0,0,0.25)"
-              icon="whatsapp"
-              iconColor="rgba(255,255,255,1)"
-              backgroundColor="rgb(87,230,94)"
-              url="https://some-website.com/my-social-media-url"
-              size="50"
-            />
+    <div className="">
+      <div
+        className="overflow-hidden max-w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-bottom "
+        style={{ backgroundImage: `url( ${background})` }}
+      >
+        <ScrollToTop />
+        {/* <Sidebar /> */}
+        <Navbar />
+        {/* <Navbar /> */}
+        <div className="flex flex-col absolute  left-0 top-1/3">
+          <div className="flex flex-col fixed right-0 top-2/3 bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
+            <div className="mr-4 hover:scale-110 ">
+              {" "}
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="github"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="rgb(27,31,35)"
+                url="https://some-website.com/my-social-media-url"
+                size="50"
+              />
+            </div>
+            <div className="mr-4 hover:scale-110">
+              {" "}
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="twitter"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="rgba(26,166,233,1)"
+                url="https://some-website.com/my-social-media-url"
+                size="50"
+              />
+            </div>
+            <div className="mr-4 hover:scale-110">
+              {" "}
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="linkedin"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="rgb(0,119,181)"
+                url="https://some-website.com/my-social-media-url"
+                size="50"
+              />
+            </div>
+            <div className="mr-4 hover:scale-110">
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="whatsapp"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="rgb(87,230,94)"
+                url="https://some-website.com/my-social-media-url"
+                size="50"
+              />
+            </div>
           </div>
         </div>
+        <Routes>
+          <Route path="/career" element={<Career />} />
+          <Route path="/whoweare" element={<WhoWeAre />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/contactus" element={<Login heading="Contact Us" />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <ScrollButton />
+        <Footer />
       </div>
-      <Routes>
-        <Route path="/career" element={<Career />} />
-        <Route path="/whoweare" element={<WhoWeAre />} />
-        <Route path="/service" element={<Services />} />
-        <Route path="/contactus" element={<Login heading="Contact Us" />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <ScrollButton />
-      <Footer />
     </div>
   );
 }

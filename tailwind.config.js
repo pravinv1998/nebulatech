@@ -18,6 +18,8 @@ module.exports = {
         navafter: "name 700ms ease-in 400ms",
         company_logo: "logo 700ms ease-in 400ms",
         // spin: "spin 1s infinite 500ms",
+        landing_left: "left 700ms ease-in 400ms",
+        landing_right: "right 700ms ease-in 400ms",
       },
       keyframes: {
         "nav-load": {
@@ -31,6 +33,14 @@ module.exports = {
         name: {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
+        },
+        left: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        right: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
         },
       },
       fontFamily: {

@@ -114,7 +114,7 @@ export default function Sidebar() {
   );
 
   return (
-    <div className="animate-company_logo">
+    <div className="animate-landing_left ">
       <React.Fragment>
         <IconButton
           sx={{ color: "#F0F9FF" }}
