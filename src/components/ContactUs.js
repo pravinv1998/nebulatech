@@ -48,7 +48,10 @@ const ContactUs = () => {
       </h1>
       <div className="grid grid-cols-1 p-2  gap-2 md:grid-cols-2 place-content-center ">
         <div className="grid grid-cols-1 place-items-center  w-full rounded-md m-4 bg-blue-300/50 shadow-lg shadow-slate-400/40   p-2 ">
-          <div className="w-full text-slate-100 md:w-3/4">
+          <div
+            data-aos="fade-bottom"
+            className="w-full text-slate-100 md:w-3/4"
+          >
             <Link to="/">
               <img
                 className=" h-[70px] mb-4 left-0 object-contain "
@@ -60,26 +63,47 @@ const ContactUs = () => {
               data-aos="flip-down"
               className="w-full shadow-lg items-center   rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 "
             >
-              <h1 className="flex flex-wrap text-slate-900  text-[1.3em] ">
+              <h1
+                data-aos="fade-right"
+                className="flex flex-wrap text-slate-900  text-[1.3em] "
+              >
                 {" "}
                 <PhoneIcon /> 8668768612, 8097760688, 7507316272
               </h1>
-              <h1 className="flex flex-wrap text-slate-900  text-[1.3em] ">
+              <h1
+                data-aos="fade-left"
+                className="flex flex-wrap text-slate-900  text-[1.3em] "
+              >
                 {" "}
                 <EmailIcon /> hr@nebula-technology.com
               </h1>
             </div>
-            <div className=" shadow-xl  w-full rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 ">
-              <h1 className=" text-slate-900  text-[1.3em] ">
+            <div
+              data-aos="flip-up"
+              className=" shadow-xl  w-full rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 "
+            >
+              <h1
+                data-aos="fade-right"
+                className=" text-slate-900  text-[1.3em] "
+              >
                 CTS No 349, 3rd floor, Shilavihar Colony,
               </h1>
-              <h1 className=" text-slate-900  text-[1.3em]  ">
+              <h1
+                data-aos="fade-left"
+                className=" text-slate-900  text-[1.3em]  "
+              >
                 Opposite to Durga Mata Mandir,
               </h1>
-              <h1 className=" text-slate-900  text-[1.3em] ">
+              <h1
+                data-aos="fade-right"
+                className=" text-slate-900  text-[1.3em] "
+              >
                 Near Paud Phata Bus Stop,
               </h1>
-              <h1 className=" text-slate-900  text-[1.3em] ">
+              <h1
+                data-aos="fade-left"
+                className=" text-slate-900  text-[1.3em] "
+              >
                 Kothrud, Pune 411038
               </h1>
             </div>

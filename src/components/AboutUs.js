@@ -1,20 +1,16 @@
 import React from "react";
 import erp from "../assets/img/1.png";
-import custom from "../assets/img/2.png";
-import web from "../assets/img/3.png";
+
 import product from "../assets/img/4.png";
 import digital from "../assets/img/5.png";
-import desktop from "../assets/img/6.png";
+
 import android from "../assets/img/7.png";
-import ios from "../assets/img/8.png";
+
 import manpower from "../assets/img/9.png";
-import cloud from "../assets/img/11.png";
-import about from "../assets/img/about.jpg";
 
 import mobile from "../assets/img/17.png";
 import tech from "../assets/img/15.jpg";
 
-import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import ClientData from "./ClientData";
 import Clients from "./Clients";
 const Data = [
@@ -100,8 +96,11 @@ const AboutUs = () => {
           >
             <h1 className="text-2xl hover:underline">HR Solution</h1>
             <p className="text-lg mt-4">
-              Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
-              Learning, Keep Working hard!!!
+              We have many kinds of HR services nowadays, from contingency
+              search, retained search and Recruitment Process Outsourcing (RPO)
+              services. Most HR service provider's main roles are to help
+              businesses to run a hiring process more effectively, improve their
+              talent pool by acquiring the skilled candidates.
             </p>
           </div>
         </div>

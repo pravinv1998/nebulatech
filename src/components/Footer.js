@@ -94,8 +94,8 @@ const Footer = () => {
       </div>
 
       <div className="flex text-slate-100 text-[1rem] mt-4 py-6 px-4 md:px-0 flex-wrap  bg-primary/60  items-center justify-around">
-        <h1>Copyright © 2018 - All Rights Reserved - Nebula Technology</h1>
-        <h1>Developed by Pravin Vargad</h1>
+        <h1>Copyright © 2022 - All Rights Reserved - Nebula Technology</h1>
+        {/* <h1>Developed by Pravin Vargad</h1> */}
       </div>
     </div>
   );

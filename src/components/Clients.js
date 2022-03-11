@@ -34,7 +34,7 @@ const Clients = () => {
         Our Clients{" "}
       </h1>
 
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-auto h-auto  ">
+      <div className=" grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 w-auto h-auto  ">
         <div data-aos="flip-up" className="w-30   h-60 p-2 ">
           <img
             src={tech_mahindra}

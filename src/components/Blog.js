@@ -17,7 +17,7 @@ const Blog = () => {
           className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
         >
           <h1 className="text-2xl hover:underline">HR Solution</h1>
-          <p className="text-lg mt-4">
+          <p className="text-lg  text-slate-900 mt-4">
             Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning,
             Keep Working hard!!!
           </p>
@@ -34,7 +34,7 @@ const Blog = () => {
           className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
         >
           <h1 className="text-2xl hover:underline">HR Solution</h1>
-          <p className="text-lg mt-4">
+          <p className="text-lg  text-slate-900 mt-4">
             Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning,
             Keep Working hard!!!
           </p>
@@ -64,7 +64,7 @@ const Blog = () => {
           className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
         >
           <h1 className="text-2xl hover:underline">HR Solution</h1>
-          <p className="text-lg mt-4">
+          <p className="text-lg  text-slate-900 mt-4">
             Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning,
             Keep Working hard!!!
           </p>

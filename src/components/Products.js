@@ -21,17 +21,21 @@ const Products = () => {
         {Data.map((arrVal, i) => (
           <div
             data-aos={i % 2 === 0 ? "flip-left" : "flip-right"}
-            className="flex flex-col grid-cols-2 rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  bg-blue-500/70   flex-wrap items-center justify-between  w-[90%] h-[100%]"
+            className="flex flex-col grid-cols-2 rounded-2xl  p-16   hover:bg-gradient-to-l hover:scale-110 duration-500 hover:from-blue-500  from-purple-500 to-pink-500  bg-blue-500/70   flex-wrap items-center justify-center space-y-4  w-[90%] h-[100%]"
             key={arrVal.id}
           >
-            <img
-              className="w-70 h-70 top-0 hover:scale-125 duration-500  mb-4  "
-              src={arrVal.image}
-            />
-            <h4 className="font-mono text-center text-1xl md:text-2xl text-cyan-100 bottom-0">
-              {" "}
-              {arrVal.name}{" "}
-            </h4>
+            <div>
+              <img
+                className="w-70 h-70 top-0 hover:scale-125 duration-500  mb-4  "
+                src={arrVal.image}
+              />
+            </div>
+            <div>
+              <h4 className="font-mono mt-8 text-center text-1xl md:text-2xl text-cyan-100 bottom-0">
+                {" "}
+                {arrVal.name}{" "}
+              </h4>
+            </div>
           </div>
           // <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
           //   <a href="#">

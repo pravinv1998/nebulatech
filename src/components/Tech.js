@@ -67,7 +67,7 @@ const Tech = () => {
             data-aos="fade-right"
             className="text-center text-slate-900 font-sans font-semibold p-2 "
           >
-            Manual, Automation, Core Java, Selenium, Kukumber, API Testing
+            Manual, Automation, Core Java, Selenium, Cucumber, API Testing
           </h1>
         </div>
       </div>

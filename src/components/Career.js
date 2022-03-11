@@ -18,7 +18,7 @@ const Career = () => {
             className="flex flex-col justify-center  md:p-8 p-3"
           >
             <h1 className="text-2xl md:text-6xl hover:underline">Career</h1>
-            <p className="text-sm mt-4">
+            <p className="text-lg  mt-4">
               nebula's career page shares a clear mission statement that
               inspires. It explicitly defines the type of employees they're
               seeking, while also intriguing great applicants with quotes from
