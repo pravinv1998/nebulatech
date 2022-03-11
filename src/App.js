@@ -116,7 +116,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/whoweare" element={<WhoWeAre />} />
           <Route path="/service" element={<Services />} />
-          <Route path="/contactus" element={<Login heading="Contact Us" />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/blogs" element={<Blog />} />

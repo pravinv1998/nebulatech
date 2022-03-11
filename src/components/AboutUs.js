@@ -31,8 +31,8 @@ const Data = [
   },
   {
     id: 3,
-    image: digital,
-    name: "Digital Marketing",
+    image: manpower,
+    name: "HR Solutions",
   },
 
   {
@@ -43,8 +43,8 @@ const Data = [
 
   {
     id: 5,
-    image: manpower,
-    name: "HR Solutions",
+    image: digital,
+    name: "Digital Marketing",
   },
 ];
 
@@ -65,7 +65,7 @@ const AboutUs = () => {
             <div
               key={i}
               data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
-              className=" hover:scale-110 flex flex-col justify-between rounded-xl shadow-lg shadow-slate-400  bg-pink-400 p-8  "
+              className=" hover:scale-110 flex flex-col justify-between rounded-xl   bg-pink-400 p-8  "
             >
               <div className="flex justify-center items-center">
                 <img
@@ -89,7 +89,7 @@ const AboutUs = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 text-cyan-100 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
+        <div className="grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
           <div data-aos="fade-right">
             <img src={tech} className="rounded-xl" />
           </div>
@@ -99,14 +99,14 @@ const AboutUs = () => {
             className="flex flex-col justify-center align-middle md:p-8 p-3"
           >
             <h1 className="text-2xl hover:underline">HR Solution</h1>
-            <p className="text-sm mt-4">
+            <p className="text-lg mt-4">
               Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
               Learning, Keep Working hard!!!
             </p>
           </div>
         </div>
 
-        <div className="  grid grid-cols-1 text-cyan-100 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
+        <div className="  grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
           <div>
             <img data-aos="fade-right" src={mobile} className="rounded-xl" />
           </div>
@@ -116,9 +116,10 @@ const AboutUs = () => {
             className="flex flex-col justify-center align-middle md:p-8 p-3"
           >
             <h1 className="text-2xl hover:underline">Google SEO Management</h1>
-            <p className="text-sm mt-4">
-              Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
-              Learning, Keep Working hard!!!
+            <p className="text-lg mt-4">
+              SEO, or search engine optimization, is the practice of including
+              content on your site that has the potential to improve your site's
+              visibility to search engines and their users.
             </p>
           </div>
         </div>

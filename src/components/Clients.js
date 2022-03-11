@@ -1,8 +1,10 @@
 import React from "react";
-import itsupport from "../assets/img/itsupport.jpg";
-import digital_matrix from "../assets/img/digital.jpg";
-import infosys from "../assets/img/infosys.png";
-import pursho from "../assets/img/pursho.jpg";
+
+import garage_on_the_wheel from "../assets/clients/garage_on_the_wheel.jpg";
+import lauro from "../assets/clients/lauro.jpg";
+import mahadev_clg from "../assets/clients/mahadev_clg.jpg";
+import tarasa from "../assets/clients/tarasa.png";
+import tech_mahindra from "../assets/clients/tech_mahindra.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -33,30 +35,37 @@ const Clients = () => {
       </h1>
 
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-auto h-auto  ">
-        <div data-aos="flip-up" className="w-50 col-span-2  h-40">
+        <div data-aos="flip-up" className="w-30   h-60 p-2 ">
           <img
-            src={infosys}
+            src={tech_mahindra}
             alt="infosys"
             className="w-full h-full object-center  hover:scale-125 duration-500"
           />
         </div>
-        <div data-aos="fade-down" className="w-50 h-40">
+        <div data-aos="fade-down" className="w-30 h-60 p-2 ">
           <img
-            src={itsupport}
+            src={tarasa}
             alt="itsupport"
             className="w-full h-full  hover:scale-125 duration-500"
           />
         </div>
-        <div data-aos="fade-up" className="w-50  h-40">
+        <div data-aos="fade-up" className="w-30  h-60 p-2 ">
           <img
-            src={digital_matrix}
+            src={garage_on_the_wheel}
             alt="digital_matrix"
             className="w-full h-full  hover:scale-125 duration-500"
           />
         </div>
-        <div data-aos="flip-down" className="w-50 col-span-2 h-40">
+        <div data-aos="flip-down" className="w-30  h-60 p-2 ">
           <img
-            src={pursho}
+            src={mahadev_clg}
+            alt="pursho"
+            className="w-full h-full object-center  hover:scale-125 duration-500"
+          />
+        </div>
+        <div data-aos="flip-down" className="w-30  h-60 p-2 ">
+          <img
+            src={lauro}
             alt="pursho"
             className="w-full h-full object-center  hover:scale-125 duration-500"
           />

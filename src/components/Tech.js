@@ -53,7 +53,7 @@ const Tech = () => {
             data-aos="fade-down"
             className="text-center text-slate-900 font-sans font-semibold p-2 "
           >
-            J2EE, Spring Framework, Microservices, Hibernate, Android
+            HTML5, CSS3, JavaScript, React.Js, Angular.Js, Node.Js
           </h1>
         </div>
         <div className="flex flex-col p-2 bg-slate-200 shadow-sm shadow-slate-400/50  rounded-md items-center justify-between md:w-[15vw] space-y-2 ">
@@ -67,7 +67,7 @@ const Tech = () => {
             data-aos="fade-right"
             className="text-center text-slate-900 font-sans font-semibold p-2 "
           >
-            J2EE, Spring Framework, Microservices, Hibernate, Android
+            Manual, Automation, Core Java, Selenium, Kukumber, API Testing
           </h1>
         </div>
       </div>
