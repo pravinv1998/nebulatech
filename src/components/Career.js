@@ -6,7 +6,7 @@ import Tech from "./Tech";
 
 const Career = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center p-4 md:p-8 w-full h-full">
         <div className="grid grid-cols-1 w-full md:grid-cols-2  rounded-xl py-8 p-4 bg-blue-300/50">
           <div data-aos="fade-right">

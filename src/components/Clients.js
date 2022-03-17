@@ -28,7 +28,7 @@ SwiperCore.use([Pagination, Navigation, Scrollbar, A11y]);
 
 const Clients = () => {
   return (
-    <div className=" w-full h-full bg-try/20  flex flex-col flex-wrap items-center justify-around p-8  ">
+    <div className="overflow-hidden w-full h-full bg-try/20  flex flex-col flex-wrap items-center justify-around p-8  ">
       <h1 className="font-sans md:text-3xl text-2xl mb-8 text-cyan-100 ">
         {" "}
         Our Clients{" "}

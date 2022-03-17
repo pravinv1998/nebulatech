@@ -40,7 +40,7 @@ function App() {
 
   const Home = () => {
     return (
-      <div>
+      <div className="overflow-hidden">
         {/* <Main /> */}
         <LandingPage />
         <Tech />
@@ -58,14 +58,14 @@ function App() {
   return (
     <div className="">
       <div
-        className="overflow-hidden max-w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-bottom "
+        className=" w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-bottom "
         style={{ backgroundImage: `url( ${background})` }}
       >
         <ScrollToTop />
         {/* <Sidebar /> */}
         <Navbar />
         {/* <Navbar /> */}
-        <div className="flex flex-col absolute  left-0 top-1/3">
+        <div className="flex flex-col absolute z-50 left-0 top-1/3">
           <div className="flex flex-col fixed right-0 top-2/3 bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
             <div className="mr-4 hover:scale-110 ">
               {" "}

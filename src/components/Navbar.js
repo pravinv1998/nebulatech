@@ -54,17 +54,16 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky fixed-top top-0">
-      <div className=" animate-nav flex flex-wrap shadow-lg bg-gradient-to-r from-try to-info shadow-slate-400/20  w-full h-full  px-1 md:px-8   items-center justify-between ">
-        <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
-          <Link to="/">
-            <img
-              className=" z-100 h-[70px] animate-navafter "
-              src={logo}
-              alt="logo"
-            />{" "}
-          </Link>
-          {/* <Link to="career" className="mx-4 transation_text">
+    <div className="sticky top-0 z-50 animate-nav flex flex-wrap shadow-lg bg-gradient-to-r from-try to-info shadow-slate-400/20  w-full h-full  px-1 md:px-8   items-center justify-between ">
+      <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
+        <Link to="/">
+          <img
+            className=" z-100 h-[70px] animate-navafter "
+            src={logo}
+            alt="logo"
+          />{" "}
+        </Link>
+        {/* <Link to="career" className="mx-4 transation_text">
             Career
           </Link>
           <Link to="/contactus" className="mx-4 transation_text">
@@ -73,9 +72,9 @@ function Navbar() {
           <Link to="aboutus" className="mx-4 transation_text">
             AboutUS ///////////////////
           </Link> */}
-        </div>
-        <div className=" flex  justify-around pr-2  ">
-          {/* <Link to="/">
+      </div>
+      <div className=" flex  justify-around pr-2  ">
+        {/* <Link to="/">
             <button
               type="button"
               className=" transation_text mr-3 text-cyan-50 bg-gradient-to-r from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md font-sans"
@@ -83,18 +82,17 @@ function Navbar() {
               Home
             </button>{" "}
           </Link> */}
-          <Link to="contactus">
-            <button
-              type="button"
-              className=" transation_text animate-navafter text-cyan-50 bg-transparent   from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md "
-            >
-              Contact Us
-            </button>{" "}
-          </Link>
+        <Link to="contactus">
+          <button
+            type="button"
+            className=" transation_text animate-navafter text-cyan-50 bg-transparent   from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md "
+          >
+            Contact Us
+          </button>{" "}
+        </Link>
 
-          <Sidebar />
-          {/* <div>{isOpen ? <HideSidebar /> : <ShowSidebar />}</div> */}
-        </div>
+        <Sidebar />
+        {/* <div>{isOpen ? <HideSidebar /> : <ShowSidebar />}</div> */}
       </div>
     </div>
   );
