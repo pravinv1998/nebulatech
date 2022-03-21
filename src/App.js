@@ -50,7 +50,7 @@ function App() {
         <Clients /> */}
         <Products />
         <AboutUs />
-        <Login />
+        {/* <Login /> */}
       </div>
     );
   };
@@ -113,18 +113,21 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route path="/career" element={<Career />} />
-          <Route path="/whoweare" element={<WhoWeAre />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
+          <Route exact path="/career" element={<Career />} />
+          <Route exact path="/whoweare" element={<WhoWeAre />} />
+          <Route exact path="/service" element={<Services />} />
+          <Route exact path="/contactus" element={<ContactUs />} />
+          <Route exact path="/aboutus" element={<AboutUs />} />
+          <Route exact path="/products" element={<Products />} />
+          <Route exact path="/blogs" element={<Blog />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
         <ScrollButton />
         <Footer />
+        {/* <Routes>
+          <Route exact path="/contactus" element={<ContactUs />} />
+        </Routes> */}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import erp from "../assets/img/1.png";
 
 import product from "../assets/img/4.png";
@@ -10,41 +10,62 @@ import manpower from "../assets/img/9.png";
 
 import mobile from "../assets/img/17.png";
 import tech from "../assets/img/15.jpg";
+import erpservice from "../assets/img/11.jpg";
+
+import hrsolutions from "../assets/img/hrsolutions.jpg";
+import productapp from "../assets/img/product.jpg";
 
 import ClientData from "./ClientData";
 import Clients from "./Clients";
-const Data = [
-  {
-    id: 1,
-    image: erp,
-    name: "ERP Service",
-  },
-
-  {
-    id: 2,
-    image: product,
-    name: "Product Development",
-  },
-  {
-    id: 3,
-    image: manpower,
-    name: "HR Solutions",
-  },
-
-  {
-    id: 4,
-    image: android,
-    name: "Mobile Application",
-  },
-
-  {
-    id: 5,
-    image: digital,
-    name: "Digital Marketing",
-  },
-];
 
 const AboutUs = () => {
+  const erpRef = useRef(null);
+  const productRef = useRef(null);
+  const hrRef = useRef(null);
+  const mobileRef = useRef(null);
+  const digitalRef = useRef(null);
+
+  const Data = [
+    {
+      id: 1,
+      image: erp,
+      name: "ERP Service",
+      refelement: "erpRef",
+      funRef: () => erpRef.current.scrollIntoView(),
+    },
+
+    {
+      id: 2,
+      image: product,
+      name: "Product Development",
+      refelement: "productRef",
+      funRef: () => productRef.current.scrollIntoView(),
+    },
+    {
+      id: 3,
+      image: manpower,
+      name: "HR Solutions",
+      refelement: "hrRef",
+      funRef: () => hrRef.current.scrollIntoView(),
+    },
+
+    {
+      id: 4,
+      image: android,
+      name: "Mobile Application",
+      refelement: "mobileRef",
+      funRef: () => mobileRef.current.scrollIntoView(),
+    },
+
+    {
+      id: 5,
+      image: digital,
+      name: "Digital Marketing",
+      refelement: "digitalRef",
+      funRef: () => digitalRef.current.scrollIntoView(),
+    },
+  ];
+
   return (
     <div className="overflow-hidden">
       <div className="w-screen h-full ">
@@ -56,47 +77,105 @@ const AboutUs = () => {
             About Us
           </h1>
         </div>
-        <div id="blogs" className="p-10">
+        <div className="p-10">
           <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
             {Data.map((data, i) => (
-              <div
-                key={i}
-                data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
-                className=" hover:scale-110 flex flex-col justify-between rounded-xl   bg-pink-400 p-8  "
-              >
-                <div className="flex justify-center items-center">
-                  <img
-                    className="rounded-xl  w-16 h-16 fill-slate-900 "
-                    src={data.image}
-                  />
-                </div>
+              <div key={i} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}>
+                <div
+                  onClick={data.funRef}
+                  className="hover:bg-gradient-to-l hover:scale-110 hover:from-blue-500  from-purple-500 to-pink-500 cursor-pointer  duration-500 flex flex-col justify-between rounded-xl   bg-pink-400 p-8"
+                >
+                  <div className="flex flex-col h-[20ch] w-auto justify-center items-center">
+                    <img
+                      className="rounded-xl  w-auto h-16 fill-slate-900 "
+                      src={data.image}
+                      alt={data.name}
+                    />
 
-                <div className="bottom-0">
-                  <h1 className="text-2xl mt-6 text-slate-900 font-bold">
-                    {" "}
-                    {data.name}{" "}
-                  </h1>
-
-                  <p className="mt-3 text-slate-900 text-sm">
-                    Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep
-                    Learning, Keep Working hard!!!
-                  </p>
+                    <h1 className="  text-2xl text-center mt-6 text-slate-900 font-bold">
+                      {" "}
+                      {data.name}{" "}
+                    </h1>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
+          <div
+            ref={erpRef}
+            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+          >
             <div data-aos="fade-right">
-              <img src={tech} className="rounded-xl" />
+              <img
+                src={erpservice}
+                className="rounded-xl w-full h-[20vh] md:h-[50vh] "
+              />
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="flex flex-col justify-center h-full w-auto align-middle md:p-8 p-3"
+            >
+              <h1 className="text-2xl text-justify hover:underline">
+                ERP Solution
+              </h1>
+              <p className="text-lg text-justify mt-4">
+                Enterprise resource planning (ERP) refers to a type of software
+                that organizations use to manage day-to-day business activities
+                such as accounting, procurement, project management, risk
+                management and compliance, and supply chain operations..
+              </p>
+            </div>
+          </div>
+
+          <div
+            ref={productRef}
+            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+          >
+            <div data-aos="fade-right">
+              <img
+                src={productapp}
+                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              />
             </div>
 
             <div
               data-aos="fade-left"
               className="flex flex-col justify-center align-middle md:p-8 p-3"
             >
-              <h1 className="text-2xl hover:underline">HR Solution</h1>
-              <p className="text-lg mt-4">
+              <h1 className="text-2xl text-justify hover:underline">
+                Product Development
+              </h1>
+              <p className="text-lg text-justify mt-4">
+                Software product development is a repetitive logical process
+                that aims to builds a programmed software product to mark a
+                unique personal or business goal, process, or objective. It is
+                mostly a planned strategy that comprises various stages or steps
+                that result in the creation of an operational software product.
+              </p>
+            </div>
+          </div>
+
+          <div
+            ref={hrRef}
+            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+          >
+            <div data-aos="fade-right">
+              <img
+                src={hrsolutions}
+                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              />
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="flex flex-col justify-center align-middle md:p-8 p-3"
+            >
+              <h1 className="text-2xl text-justify hover:underline">
+                HR Solution
+              </h1>
+              <p className="text-lg text-justify mt-4">
                 We have many kinds of HR services nowadays, from contingency
                 search, retained search and Recruitment Process Outsourcing
                 (RPO) services. Most HR service provider's main roles are to
@@ -106,22 +185,58 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="  grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50">
+          <div
+            ref={mobileRef}
+            className="w-full md:h-[70vh] place-items-center  grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+          >
             <div>
-              <img data-aos="fade-right" src={mobile} className="rounded-xl" />
+              <img
+                data-aos="fade-right"
+                src={mobile}
+                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              />
             </div>
 
             <div
               data-aos="fade-left"
               className="flex flex-col justify-center align-middle md:p-8 p-3"
             >
-              <h1 className="text-2xl hover:underline">
-                Google SEO Management
+              <h1 className="text-2xl text-justify hover:underline">
+                Mobile Development
               </h1>
-              <p className="text-lg mt-4">
-                SEO, or search engine optimization, is the practice of including
-                content on your site that has the potential to improve your
-                site's visibility to search engines and their users.
+              <p className="text-lg text-justify mt-4">
+                Cross Platform MObile App Development, App Store Optimization
+                (ASO) both before and after launching. Outreach initiatives and
+                internal cross-promotion. Marketing via social networks. Booking
+                KOLs. Mass media promotion and burst campaign.
+              </p>
+            </div>
+          </div>
+          <div
+            ref={digitalRef}
+            className="w-full md:h-[70vh] place-items-center grid grid-cols-1  text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+          >
+            <div>
+              <img
+                data-aos="fade-right"
+                src={tech}
+                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              />
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="flex flex-col justify-center align-middle md:p-8 p-3"
+            >
+              <h1 className="text-2xl text-justify hover:underline">
+                Digital Marketing
+              </h1>
+              <p className="text-lg text-justify mt-4">
+                Your powerhouse for digital marketing solutions.forward-thinking
+                plan, using SMART goals, to grow a business. Tactics associated
+                with a digital marketing strategy include digital marketing
+                services like website design, SEO, paid ads, content marketing
+                and social media marketing.
               </p>
             </div>
           </div>

@@ -73,7 +73,7 @@ export default function Sidebar() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="blogs">
+        {/* <Link to="blogs">
           <ListItem button>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <NoteIcon />
@@ -81,7 +81,7 @@ export default function Sidebar() {
             <ListItemText primary="Blogs" />
           </ListItem>
         </Link>
-        <Divider />
+        <Divider /> */}
         <Link to="career">
           <ListItem button>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
@@ -114,7 +114,7 @@ export default function Sidebar() {
   );
 
   return (
-    <div className="animate-landing_left ">
+    <div className="animate-company_logo ">
       <React.Fragment>
         <IconButton
           sx={{ color: "#F0F9FF" }}

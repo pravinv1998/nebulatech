@@ -7,7 +7,7 @@ const ClientData = () => {
     <div className="overflow-hidden flex flex-wrap items-center justify-around p-4 w-full h-64 bg-transparent">
       <div
         data-aos="fade-right"
-        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-3xl p-4  flex-col items-start  justify-center flex-wrap "
+        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-xl p-4  flex-col items-start  justify-center flex-wrap "
       >
         <h1 className="font-mono  text-2xl  md:text-4xl ">
           {" "}
@@ -24,7 +24,7 @@ const ClientData = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="flex shadow-lg bg-secondry text-gray-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-3xl p-4  flex-col items-start justify-center flex-wrap "
+        className="flex shadow-lg bg-secondry text-gray-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-xl p-4  flex-col items-start justify-center flex-wrap "
       >
         <h1 className="font-mono  text-2xl md:text-4xl ">
           <CountUp start={0} end={80} prefix="+" redraw={true}>
@@ -39,7 +39,7 @@ const ClientData = () => {
       </div>
       <div
         data-aos="fade-down"
-        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-3xl p-4  flex-col items-start justify-center flex-wrap "
+        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-xl p-4  flex-col items-start justify-center flex-wrap "
       >
         <h1 className="font-mono  text-2xl md:text-4xl ">
           <CountUp start={0} end={50} prefix="+" redraw={true}>
@@ -54,7 +54,7 @@ const ClientData = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-3xl p-4 flex-col items-start justify-center flex-wrap "
+        className="flex shadow-lg bg-secondry text-sky-100 cursor-pointer hover:text-gray-900 hover:bg-slate-200 animate-bounce shadow-slate-500/30 rounded-xl p-4 flex-col items-start justify-center flex-wrap "
       >
         <h1 className="font-mono  text-2xl md:text-4xl ">
           <CountUp start={0} end={87} prefix="%" redraw={true}>

@@ -82,14 +82,14 @@ function Navbar() {
               Home
             </button>{" "}
           </Link> */}
-        <Link to="contactus">
+        {/* <Link to="contactus">
           <button
             type="button"
             className=" transation_text animate-navafter text-cyan-50 bg-transparent   from-blue-500 hover:bg-gradient-to-l hover:from-blue-500 p-3 rounded-md "
           >
             Contact Us
           </button>{" "}
-        </Link>
+        </Link> */}
 
         <Sidebar />
         {/* <div>{isOpen ? <HideSidebar /> : <ShowSidebar />}</div> */}

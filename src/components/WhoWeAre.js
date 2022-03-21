@@ -23,17 +23,19 @@ const WhoWeAre = () => {
             // className="flex flex-col justify-center items-center h-full md:p-8 p-4 "
           >
             <h1 className="text-2xl md:text-3xl hover:underline">Who We Are</h1>
-            <p className="text-lg md:text-1xl  mt-2 p-2 overflow-hidden">
-              We are a friendly, dynamic, knowledgeable, experienced and
-              committed people works in the Geo-Spatial Domain. We put clients
-              at the heart of what we do, though our services go far beyond
-              that. For over 4 years, we have been nurturing creativity and
-              building the skills and processes to be your safe pair of hands to
-              take your business to the next level. We have the power of will
-              and a hunger for innovation which keeps us moving and growing. We
-              see great work as a starting point, not an end. We look forward to
-              create opportunities, because the world isn’t stopping and neither
-              are we.
+            <p className="text-lg text-justify md:text-1xl  mt-2 p-2 overflow-hidden">
+              Welcome to Nebula technology, your number one source for all
+              things in Software Solutions. We're dedicated to giving you the
+              very best of Software Solutions, with a focus on Java, Android,
+              Spring Hibernate, IOS, PHP, Digital Marketing etc. We have
+              expertise in different domain and we passionate about upgrading us
+              in new technologies as well. Our long term goal is to_provide end
+              to end service to our clients and make them satisfied with our
+              service. We are working with different technologies to implement
+              clients innovative ideas in real time environment. We hope you
+              enjoy Our Service and products as much as we enjoy offering them
+              to you. If you have any questions or comments, please don't
+              hesitate to contact us.
             </p>
           </div>
         </div>

@@ -27,7 +27,13 @@ const LandingPage = () => {
       <div className="flex animate-navafter justify-center  items-center  ">
         <div className="drop-shadow-3xl  ">
           <h1 className=" flex items-center text-4xl  md:text-8xl font-extrabold   ">
-            N <img src={icon} className="w-16 h-16 bottom-0" alt="logo" /> bula
+            N{" "}
+            <img
+              src={icon}
+              className="w-16 h-16 animate-company_logo logo bottom-0"
+              alt="logo"
+            />{" "}
+            bula
           </h1>
           <h1 className=" text-3xl md:text-6xl font-bold bg-red-800 text-slate-50 uppercase p-2 drop-shadow-2xl  ">
             Technology

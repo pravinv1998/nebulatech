@@ -71,7 +71,7 @@ const Login = () => {
             </div>
             <div data-aos="fade-right">
               <h1 className="font-mono text-1xl font-semibold text-slate-900 bottom-0">
-                Message
+                Your View
               </h1>
               <textarea
                 type="text"
@@ -82,9 +82,39 @@ const Login = () => {
                 required
               />
             </div>
+            <div data-aos="fade-left" className="flex justify-start">
+              <div className="mb-3 w-96">
+                <label
+                  for="formFile"
+                  className="form-label inline-block font-semibold mb-2 text-slate-900"
+                >
+                  Upload Your Resume
+                </label>
+                <input
+                  className="form-control
+    block
+    w-full
+    px-3
+    p-4
+    py-1.5
+    text-base
+    font-normal
+    text-gray-700
+    bg-white bg-clip-padding
+    border border-solid border-gray-300
+    rounded
+    transition
+    ease-in-out
+    m-0
+    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  type="file"
+                  id="formFile"
+                />
+              </div>
+            </div>
             <div className="flex items-center justify-center ">
               <button
-                data-aos="fade-left"
+                data-aos="fade-right"
                 className="p-4  text-1xl hover:bg-gradient-to-l hover:from-blue-500 md:px-6 rounded-md    font-bold bg-slate-50  "
               >
                 SEND
@@ -96,7 +126,7 @@ const Login = () => {
           {" "}
           <h1 className="text-xl md:text-1xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
-            reiciendis quia! Non voluptate sapiente, expedita assumenda itaque
+            reiciendis quia! Non vol``uptate sapiente, expedita assumenda itaque
             debitis porro accusamus exercitationem. Voluptates perspiciatis ab,
             nobis consectetur saepe doloribus quidem enim!
           </h1>{" "}
