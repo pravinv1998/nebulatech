@@ -77,7 +77,7 @@ const AboutUs = () => {
             About Us
           </h1>
         </div>
-        <div className="p-10">
+        <div className="px-10 py-3">
           <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
             {Data.map((data, i) => (
               <div key={i} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}>
@@ -115,7 +115,7 @@ const AboutUs = () => {
 
             <div
               data-aos="fade-left"
-              className="flex flex-col justify-center h-full w-auto align-middle md:p-8 p-3"
+              className="flex flex-col justify-center h-full w-auto align-middle text-cyan-50 md:p-8 p-3"
             >
               <h1 className="text-2xl text-justify hover:underline">
                 ERP Solution
@@ -142,7 +142,7 @@ const AboutUs = () => {
 
             <div
               data-aos="fade-left"
-              className="flex flex-col justify-center align-middle md:p-8 p-3"
+              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
             >
               <h1 className="text-2xl text-justify hover:underline">
                 Product Development
@@ -170,7 +170,7 @@ const AboutUs = () => {
 
             <div
               data-aos="fade-left"
-              className="flex flex-col justify-center align-middle md:p-8 p-3"
+              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
             >
               <h1 className="text-2xl text-justify hover:underline">
                 HR Solution
@@ -199,7 +199,7 @@ const AboutUs = () => {
 
             <div
               data-aos="fade-left"
-              className="flex flex-col justify-center align-middle md:p-8 p-3"
+              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
             >
               <h1 className="text-2xl text-justify hover:underline">
                 Mobile Development
@@ -226,7 +226,7 @@ const AboutUs = () => {
 
             <div
               data-aos="fade-left"
-              className="flex flex-col justify-center align-middle md:p-8 p-3"
+              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
             >
               <h1 className="text-2xl text-justify hover:underline">
                 Digital Marketing

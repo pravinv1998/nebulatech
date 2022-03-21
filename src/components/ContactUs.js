@@ -43,11 +43,8 @@ const ContactUs = () => {
   };
   return (
     <div className="w-full h-full grid grid-cols-1 gap-2  ">
-      <h1 className="text-5xl text-center justify-center text-cyan-50 ">
-        Contact Us
-      </h1>
-      <div className="grid grid-cols-1 p-2  gap-2 md:grid-cols-2 place-content-center ">
-        <div className="grid grid-cols-1 place-items-center  w-full rounded-md m-4 bg-blue-300/50 shadow-lg shadow-slate-400/40   p-2 ">
+      <div className="grid grid-cols-1 p-2  md:grid-cols-1 place-content-center ">
+        {/* <div className="grid grid-cols-1 place-items-center  w-full rounded-md m-4 bg-blue-300/50 shadow-lg shadow-slate-400/40   p-2 ">
           <div
             data-aos="fade-bottom"
             className="w-full text-slate-100 md:w-3/4"
@@ -108,7 +105,7 @@ const ContactUs = () => {
               </h1>
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
           <Login />
         </div>

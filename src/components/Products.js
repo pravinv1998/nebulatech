@@ -17,7 +17,7 @@ const Products = () => {
         {" "}
         Our Products{" "}
       </h1>
-      <div className="grid place-items-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full h-full ">
+      <div className="grid place-items-center lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 w-full h-full ">
         {Data.map((arrVal, i) => (
           <div
             data-aos={i % 2 === 0 ? "flip-left" : "flip-right"}

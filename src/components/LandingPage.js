@@ -5,6 +5,7 @@ import background from "../assets/back.png";
 import "../App.css";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
+import Tech from "./Tech";
 
 const LandingPage = () => {
   // const technology = ["Web App", "Mobile App", "Serverside App"];
@@ -21,11 +22,11 @@ const LandingPage = () => {
   return (
     <div
       // style={{ backgroundImage: `url( ${background})` }}
-      className="bg-left-top bg-no-repeat  bg-auto    grid place-content-center bg-transparent  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen "
+      className="   grid place-content-end bg-transparent  grid-cols-1  text-red-900      md:h-[55vh] "
       // className="bg-repeat-x bg-blend-color-burn bg-left-bottom bg-cover    grid place-content-center bg-transparent  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen "
     >
-      <div className="flex animate-navafter justify-center  items-center  ">
-        <div className="drop-shadow-3xl  ">
+      <div className="flex flex-col space-y-4 justify-center h-full md:mb-10 items-center  ">
+        <div className="bg-slate-50/50 p-8 rounded-md animate-navafter drop-shadow-3xl  ">
           <h1 className=" flex items-center text-4xl  md:text-8xl font-extrabold   ">
             N{" "}
             <img
@@ -88,14 +89,17 @@ const LandingPage = () => {
             </div>
           </div> */}
         </div>
+        {/* <div className="animate-company_logo">
+          <Tech />
+        </div> */}
       </div>
-      <div className="flex  logo animate-pulse h-full w-full justify-center  items-center ">
+      {/* <div className="flex  logo animate-pulse h-full w-full justify-center  items-center ">
         <img
           src={icon}
           className="mt-4 w-[60%]  animate-company_logo "
           alt="nebula_tech"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

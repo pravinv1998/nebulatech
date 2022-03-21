@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import background from "./assets/back.png";
+import videobg from "./assets/videobg.mp4";
 
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -40,7 +41,28 @@ function App() {
 
   const Home = () => {
     return (
-      <div className="overflow-hidden">
+      <div className="overflow-hidden bg-transparents ">
+        {/* <video
+          // className=" absolute top-0 left-0 h-full w-full -z-50 bg-cover "
+          autoPlay
+          muted
+          loop
+          style={{
+            position: "absolute",
+            width: "100%",
+            left: "0",
+            top: "0",
+            bottom: "0",
+            height: "100%",
+            objectFit: "cover",
+            // transform: "translate(0%, 0%)",
+            zIndex: "-1",
+            backgroundRepeat: "repeat",
+            overflow: "hidden",
+          }}
+        >
+          <source src={videobg} type="video/mp4" />
+        </video> */}
         {/* <Main /> */}
         <LandingPage />
         <Tech />
@@ -56,10 +78,29 @@ function App() {
   };
 
   return (
-    <div className="">
+    <div className="  ">
+      <video
+        // className=" absolute top-0 left-0 h-full w-full -z-50 bg-cover "
+        autoPlay
+        muted
+        loop
+        style={{
+          position: "fixed",
+          width: "100%",
+          left: "0",
+          top: "0",
+          bottom: "0",
+          height: "100%",
+          objectFit: "cover",
+          // transform: "translate(0%, 0%)",
+          zIndex: "-1",
+        }}
+      >
+        <source src={videobg} type="video/mp4" />
+      </video>
       <div
-        className=" w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-primary bg-no-repeat  bg-cover bg-fixed bg-bottom "
-        style={{ backgroundImage: `url( ${background})` }}
+        className=" w-full h-full  text-primary  "
+        // style={{ backgroundImage: `url( ${background})` }}
       >
         <ScrollToTop />
         {/* <Sidebar /> */}

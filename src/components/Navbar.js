@@ -54,7 +54,7 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 z-50 animate-nav flex flex-wrap shadow-lg bg-gradient-to-r from-try to-info shadow-slate-400/20  w-full h-full  px-1 md:px-8   items-center justify-between ">
+    <div className="sticky top-0 z-50 animate-nav flex flex-wrap shadow-lg bg-gradient-to-r  from-try to-info shadow-slate-400/20  w-full h-full  px-1 md:px-8   items-center justify-between ">
       <div className="flex text-sky-50 py-1 items-center justify-start text-1xl  flex-1 flex-wrap ">
         <Link to="/">
           <img

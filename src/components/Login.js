@@ -7,7 +7,7 @@ const Login = () => {
     <div className="flex w-full h-full  py-4 flex-col flex-wrap items-center   ">
       <div className="  grid grid-cols-1  place-items-center w-full h-full    ">
         <div className=" w-full  flex flex-col items-center justify-center">
-          <div className="bg-blue-300/50 shadow-lg shadow-slate-400/40 grid grid-cols-1 rounded-md  gap-4 p-8  ">
+          <div className="bg-blue-300/50 shadow-lg shadow-slate-400/40 grid grid-cols-1 rounded-md  gap-2 p-8  ">
             <div className="flex items-center justify-center">
               <h1 className="font-bold text-center text-slate-900   text-2xl font-mono ">
                 Contact Us
