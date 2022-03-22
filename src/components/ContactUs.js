@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
 import logo from "../assets/img/NebulaWhite.png";
+import ContactUsFooter from "./ContactUsFooter";
 
 const ContactUs = () => {
   const PhoneIcon = () => {
@@ -43,8 +44,8 @@ const ContactUs = () => {
   };
   return (
     <div className="w-full h-full grid grid-cols-1 gap-2  ">
-      <div className="grid grid-cols-1 p-2  md:grid-cols-1 place-content-center ">
-        {/* <div className="grid grid-cols-1 place-items-center  w-full rounded-md m-4 bg-blue-300/50 shadow-lg shadow-slate-400/40   p-2 ">
+      <div className="grid grid-cols-1 p-2  md:grid-cols-2 place-content-center ">
+        <div className="grid grid-cols-1  place-items-center  w-full rounded-md m-4 bg-transparent   p-2 ">
           <div
             data-aos="fade-bottom"
             className="w-full text-slate-100 md:w-3/4"
@@ -58,7 +59,7 @@ const ContactUs = () => {
             </Link>
             <div
               data-aos="flip-down"
-              className="w-full shadow-lg items-center   rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 "
+              className="w-full shadow-lg items-center   rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
             >
               <h1
                 data-aos="fade-right"
@@ -77,7 +78,7 @@ const ContactUs = () => {
             </div>
             <div
               data-aos="flip-up"
-              className=" shadow-xl  w-full rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 "
+              className=" shadow-xl  w-full rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
             >
               <h1
                 data-aos="fade-right"
@@ -105,11 +106,13 @@ const ContactUs = () => {
               </h1>
             </div>
           </div>
-        </div> */}
+        </div>
         <div>
           <Login />
         </div>
       </div>
+
+      <ContactUsFooter />
     </div>
   );
 };

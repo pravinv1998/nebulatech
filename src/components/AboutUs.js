@@ -17,6 +17,7 @@ import productapp from "../assets/img/product.jpg";
 
 import ClientData from "./ClientData";
 import Clients from "./Clients";
+import Footer from "./Footer";
 
 const AboutUs = () => {
   const erpRef = useRef(null);
@@ -104,12 +105,13 @@ const AboutUs = () => {
 
           <div
             ref={erpRef}
-            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+            className="w-full md:h-[60vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
           >
             <div data-aos="fade-right">
               <img
                 src={erpservice}
                 className="rounded-xl w-full h-[20vh] md:h-[50vh] "
+                alt="erp_service"
               />
             </div>
 
@@ -137,6 +139,7 @@ const AboutUs = () => {
               <img
                 src={productapp}
                 className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+                alt="product_development"
               />
             </div>
 
@@ -165,6 +168,7 @@ const AboutUs = () => {
               <img
                 src={hrsolutions}
                 className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+                alt="hr_solutions"
               />
             </div>
 
@@ -194,6 +198,7 @@ const AboutUs = () => {
                 data-aos="fade-right"
                 src={mobile}
                 className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+                alt="mobile_development"
               />
             </div>
 
@@ -221,6 +226,7 @@ const AboutUs = () => {
                 data-aos="fade-right"
                 src={tech}
                 className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+                alt="digital_marketing"
               />
             </div>
 
@@ -243,6 +249,7 @@ const AboutUs = () => {
         </div>
         <ClientData />
         <Clients />
+        <Footer />
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
-import mobile from "../assets/img/17.png";
+
 import tech from "../assets/img/15.jpg";
 import Login from "./Login";
 import Tech from "./Tech";
+import Footer from "./Footer";
 
 const Career = () => {
   return (
@@ -10,7 +11,7 @@ const Career = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center p-4 md:p-8 w-full h-full">
         <div className="grid grid-cols-1 w-full md:grid-cols-2  rounded-xl py-8 p-4 bg-blue-300/50">
           <div data-aos="fade-right">
-            <img src={tech} className="rounded-xl w-full  " />
+            <img src={tech} className="rounded-xl w-full  " alt="career_logo" />
           </div>
 
           <div
@@ -29,6 +30,7 @@ const Career = () => {
         <Login />
       </div>
       <Tech />
+      <Footer />
     </div>
   );
 };

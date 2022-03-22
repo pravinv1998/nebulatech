@@ -1,7 +1,7 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import background from "./assets/back.png";
+// import background from "./assets/back.png";
 import videobg from "./assets/videobg.mp4";
 
 import Navbar from "./components/Navbar";
@@ -9,28 +9,15 @@ import Services from "./components/Services";
 import Tech from "./components/Tech";
 import WhoWeAre from "./components/WhoWeAre";
 
-import img2 from "./assets/img/gifimg2.gif";
-import img1 from "./assets/img/gifimg1.gif";
-import img3 from "./assets/img/gifimg3.webp";
-import galaxy1 from "./assets/app/galaxy1.gif";
-import galaxy2 from "./assets/app/galaxy2.gif";
-import ClientData from "./components/ClientData";
-import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import Career from "./components/Career";
 import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
-import Sidebar from "./components/Sidebar";
 import Products from "./components/Products";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollButton from "./components/ScrollButton";
 import Blog from "./components/Blog";
-// import Main from "./components/Main";
-
-import { useEffect, useRef, useState } from "react";
-import NET from "vanta/dist/vanta.net.min";
-import * as THREE from "three";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
@@ -42,28 +29,6 @@ function App() {
   const Home = () => {
     return (
       <div className="overflow-hidden bg-transparents ">
-        {/* <video
-          // className=" absolute top-0 left-0 h-full w-full -z-50 bg-cover "
-          autoPlay
-          muted
-          loop
-          style={{
-            position: "absolute",
-            width: "100%",
-            left: "0",
-            top: "0",
-            bottom: "0",
-            height: "100%",
-            objectFit: "cover",
-            // transform: "translate(0%, 0%)",
-            zIndex: "-1",
-            backgroundRepeat: "repeat",
-            overflow: "hidden",
-          }}
-        >
-          <source src={videobg} type="video/mp4" />
-        </video> */}
-        {/* <Main /> */}
         <LandingPage />
         <Tech />
         <WhoWeAre />
@@ -73,6 +38,7 @@ function App() {
         <Products />
         <AboutUs />
         {/* <Login /> */}
+        <Footer />
       </div>
     );
   };
@@ -80,7 +46,6 @@ function App() {
   return (
     <div className="  ">
       <video
-        // className=" absolute top-0 left-0 h-full w-full -z-50 bg-cover "
         autoPlay
         muted
         loop
@@ -165,7 +130,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
         </Routes>
         <ScrollButton />
-        <Footer />
+
         {/* <Routes>
           <Route exact path="/contactus" element={<ContactUs />} />
         </Routes> */}
