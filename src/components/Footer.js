@@ -58,7 +58,11 @@ const Footer = ({ isShow }) => {
             >
               <h1 className="flex flex-wrap   text-[18px] ">
                 {" "}
-                <PhoneIcon /> 8668768612, 8097760688, 7507316272
+                <PhoneIcon /> <a href="tel:+918668768612">8668768612</a> ,
+                <a href="tel:+918097760688">8097760688</a> ,
+                <a type="tel" href="tel:+917507316272">
+                  7507316272
+                </a>
               </h1>
               <h1 className="flex flex-wrap   text-[18px] ">
                 {" "}

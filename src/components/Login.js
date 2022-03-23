@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialMediaIconsReact } from "social-media-icons-react";
+// import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const Login = () => {
   return (
@@ -115,7 +115,7 @@ const Login = () => {
             <div className="flex items-center justify-center ">
               <button
                 data-aos="fade-right"
-                className="p-4  text-1xl hover:bg-gradient-to-l hover:from-blue-500 md:px-6 rounded-md    font-bold bg-slate-50  "
+                className="p-4  text-1xl active:bg-primary hover:bg-gradient-to-l hover:from-blue-500 md:px-6 rounded-md    font-bold bg-slate-50  "
               >
                 SEND
               </button>

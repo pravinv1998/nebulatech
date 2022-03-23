@@ -19,7 +19,7 @@ import ClientData from "./ClientData";
 import Clients from "./Clients";
 import Footer from "./Footer";
 
-const AboutUs = () => {
+const HomeAboutUs = () => {
   const erpRef = useRef(null);
   const productRef = useRef(null);
   const hrRef = useRef(null);
@@ -68,191 +68,199 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="overflow-hidden">
-      <div className="w-screen h-full ">
-        <div
-          // style={{ backgroundImage: `url( ${about})` }}
-          className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
-        >
-          <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-100 ">
-            About Us
-          </h1>
-        </div>
-        <div className="px-10 py-3">
-          <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
-            {Data.map((data, i) => (
-              <div key={i} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}>
-                <div
-                  onClick={data.funRef}
-                  className="hover:bg-gradient-to-l hover:scale-110 hover:from-blue-500  from-purple-500 to-pink-500 cursor-pointer  duration-500 flex flex-col justify-between rounded-xl   bg-pink-400 p-8"
-                >
-                  <div className="flex flex-col h-[20ch] w-auto justify-center items-center">
-                    <img
-                      className="rounded-xl  w-auto h-16 fill-slate-900 "
-                      src={data.image}
-                      alt={data.name}
-                    />
+    <div>
+      <div
+        // style={{ backgroundImage: `url( ${about})` }}
+        className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
+      >
+        <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-100 ">
+          About Us
+        </h1>
+      </div>
+      <div className="px-10 py-3">
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
+          {Data.map((data, i) => (
+            <div key={i} data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}>
+              <div
+                onClick={data.funRef}
+                className="hover:bg-gradient-to-l hover:scale-110 hover:from-blue-500  from-purple-500 to-pink-500 cursor-pointer  duration-500 flex flex-col justify-between rounded-xl   bg-pink-400 p-8"
+              >
+                <div className="flex flex-col h-[20ch] w-auto justify-center items-center">
+                  <img
+                    className="rounded-xl  w-auto h-16 fill-slate-900 "
+                    src={data.image}
+                    alt={data.name}
+                  />
 
-                    <h1 className="  text-2xl text-center mt-6 text-slate-900 font-bold">
-                      {" "}
-                      {data.name}{" "}
-                    </h1>
-                  </div>
+                  <h1 className="  text-2xl text-center mt-6 text-slate-900 font-bold">
+                    {" "}
+                    {data.name}{" "}
+                  </h1>
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
+        </div>
+
+        <div
+          ref={erpRef}
+          className="w-full md:h-[60vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+        >
+          <div data-aos="fade-right">
+            <img
+              src={erpservice}
+              className="rounded-xl w-full h-[20vh] md:h-[50vh] "
+              alt="erp_service"
+            />
           </div>
 
           <div
-            ref={erpRef}
-            className="w-full md:h-[60vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+            data-aos="fade-left"
+            className="flex flex-col justify-center h-full w-auto align-middle text-cyan-50 md:p-8 p-3"
           >
-            <div data-aos="fade-right">
-              <img
-                src={erpservice}
-                className="rounded-xl w-full h-[20vh] md:h-[50vh] "
-                alt="erp_service"
-              />
-            </div>
-
-            <div
-              data-aos="fade-left"
-              className="flex flex-col justify-center h-full w-auto align-middle text-cyan-50 md:p-8 p-3"
-            >
-              <h1 className="text-2xl text-justify hover:underline">
-                ERP Solution
-              </h1>
-              <p className="text-lg text-justify mt-4">
-                Enterprise resource planning (ERP) refers to a type of software
-                that organizations use to manage day-to-day business activities
-                such as accounting, procurement, project management, risk
-                management and compliance, and supply chain operations..
-              </p>
-            </div>
-          </div>
-
-          <div
-            ref={productRef}
-            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
-          >
-            <div data-aos="fade-right">
-              <img
-                src={productapp}
-                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
-                alt="product_development"
-              />
-            </div>
-
-            <div
-              data-aos="fade-left"
-              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
-            >
-              <h1 className="text-2xl text-justify hover:underline">
-                Product Development
-              </h1>
-              <p className="text-lg text-justify mt-4">
-                Software product development is a repetitive logical process
-                that aims to builds a programmed software product to mark a
-                unique personal or business goal, process, or objective. It is
-                mostly a planned strategy that comprises various stages or steps
-                that result in the creation of an operational software product.
-              </p>
-            </div>
-          </div>
-
-          <div
-            ref={hrRef}
-            className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
-          >
-            <div data-aos="fade-right">
-              <img
-                src={hrsolutions}
-                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
-                alt="hr_solutions"
-              />
-            </div>
-
-            <div
-              data-aos="fade-left"
-              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
-            >
-              <h1 className="text-2xl text-justify hover:underline">
-                HR Solution
-              </h1>
-              <p className="text-lg text-justify mt-4">
-                We have many kinds of HR services nowadays, from contingency
-                search, retained search and Recruitment Process Outsourcing
-                (RPO) services. Most HR service provider's main roles are to
-                help businesses to run a hiring process more effectively,
-                improve their talent pool by acquiring the skilled candidates.
-              </p>
-            </div>
-          </div>
-
-          <div
-            ref={mobileRef}
-            className="w-full md:h-[70vh] place-items-center  grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
-          >
-            <div>
-              <img
-                data-aos="fade-right"
-                src={mobile}
-                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
-                alt="mobile_development"
-              />
-            </div>
-
-            <div
-              data-aos="fade-left"
-              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
-            >
-              <h1 className="text-2xl text-justify hover:underline">
-                Mobile Development
-              </h1>
-              <p className="text-lg text-justify mt-4">
-                Cross Platform MObile App Development, App Store Optimization
-                (ASO) both before and after launching. Outreach initiatives and
-                internal cross-promotion. Marketing via social networks. Booking
-                KOLs. Mass media promotion and burst campaign.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={digitalRef}
-            className="w-full md:h-[70vh] place-items-center grid grid-cols-1  text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
-          >
-            <div>
-              <img
-                data-aos="fade-right"
-                src={tech}
-                className="rounded-xl w-full h-[20vh] md:h-[50vh]"
-                alt="digital_marketing"
-              />
-            </div>
-
-            <div
-              data-aos="fade-left"
-              className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
-            >
-              <h1 className="text-2xl text-justify hover:underline">
-                Digital Marketing
-              </h1>
-              <p className="text-lg text-justify mt-4">
-                Your powerhouse for digital marketing solutions.forward-thinking
-                plan, using SMART goals, to grow a business. Tactics associated
-                with a digital marketing strategy include digital marketing
-                services like website design, SEO, paid ads, content marketing
-                and social media marketing.
-              </p>
-            </div>
+            <h1 className="text-2xl text-justify hover:underline">
+              ERP Solution
+            </h1>
+            <p className="text-lg text-justify mt-4">
+              Enterprise resource planning (ERP) refers to a type of software
+              that organizations use to manage day-to-day business activities
+              such as accounting, procurement, project management, risk
+              management and compliance, and supply chain operations..
+            </p>
           </div>
         </div>
-        <ClientData />
-        <Clients />
+
+        <div
+          ref={productRef}
+          className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+        >
+          <div data-aos="fade-right">
+            <img
+              src={productapp}
+              className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              alt="product_development"
+            />
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
+          >
+            <h1 className="text-2xl text-justify hover:underline">
+              Product Development
+            </h1>
+            <p className="text-lg text-justify mt-4">
+              Software product development is a repetitive logical process that
+              aims to builds a programmed software product to mark a unique
+              personal or business goal, process, or objective. It is mostly a
+              planned strategy that comprises various stages or steps that
+              result in the creation of an operational software product.
+            </p>
+          </div>
+        </div>
+
+        <div
+          ref={hrRef}
+          className="w-full md:h-[70vh] place-items-center grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+        >
+          <div data-aos="fade-right">
+            <img
+              src={hrsolutions}
+              className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              alt="hr_solutions"
+            />
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
+          >
+            <h1 className="text-2xl text-justify hover:underline">
+              HR Solution
+            </h1>
+            <p className="text-lg text-justify mt-4">
+              We have many kinds of HR services nowadays, from contingency
+              search, retained search and Recruitment Process Outsourcing (RPO)
+              services. Most HR service provider's main roles are to help
+              businesses to run a hiring process more effectively, improve their
+              talent pool by acquiring the skilled candidates.
+            </p>
+          </div>
+        </div>
+
+        <div
+          ref={mobileRef}
+          className="w-full md:h-[70vh] place-items-center  grid grid-cols-1 text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+        >
+          <div>
+            <img
+              data-aos="fade-right"
+              src={mobile}
+              className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              alt="mobile_development"
+            />
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
+          >
+            <h1 className="text-2xl text-justify hover:underline">
+              Mobile Development
+            </h1>
+            <p className="text-lg text-justify mt-4">
+              Cross Platform MObile App Development, App Store Optimization
+              (ASO) both before and after launching. Outreach initiatives and
+              internal cross-promotion. Marketing via social networks. Booking
+              KOLs. Mass media promotion and burst campaign.
+            </p>
+          </div>
+        </div>
+        <div
+          ref={digitalRef}
+          className="w-full md:h-[70vh] place-items-center grid grid-cols-1  text-slate-900 md:grid-cols-2 mt-10 rounded-xl p-8 bg-blue-400/50"
+        >
+          <div>
+            <img
+              data-aos="fade-right"
+              src={tech}
+              className="rounded-xl w-full h-[20vh] md:h-[50vh]"
+              alt="digital_marketing"
+            />
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="flex flex-col justify-center align-middle text-cyan-50 md:p-8 p-3"
+          >
+            <h1 className="text-2xl text-justify hover:underline">
+              Digital Marketing
+            </h1>
+            <p className="text-lg text-justify mt-4">
+              Your powerhouse for digital marketing solutions.forward-thinking
+              plan, using SMART goals, to grow a business. Tactics associated
+              with a digital marketing strategy include digital marketing
+              services like website design, SEO, paid ads, content marketing and
+              social media marketing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <ClientData />
+      <Clients />
+    </div>
+  );
+};
+
+const AboutUs = () => {
+  return (
+    <div className="overflow-hidden">
+      <div className="w-screen h-full ">
+        <HomeAboutUs />
         <Footer />
       </div>
     </div>
   );
 };
 
-export default AboutUs;
+export { AboutUs, HomeAboutUs };

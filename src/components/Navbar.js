@@ -63,15 +63,15 @@ function Navbar() {
             alt="logo"
           />{" "}
         </Link>
-        {/* <Link to="career" className="mx-4 transation_text">
-            Career
-          </Link>
-          <Link to="/contactus" className="mx-4 transation_text">
-            Contact Us
-          </Link>
-          <Link to="aboutus" className="mx-4 transation_text">
-            AboutUS ///////////////////
-          </Link> */}
+        {/* <Link to="career" className="mx-4 text-slate-50 transation_text">
+          Career
+        </Link>
+        <Link to="/contactus" className="mx-4 text-slate-50 transation_text">
+          Contact Us
+        </Link>
+        <Link to="aboutus" className="mx-4 text-slate-50 transation_text">
+          AboutUS
+        </Link> */}
       </div>
       <div className=" flex  justify-around pr-2  ">
         {/* <Link to="/">

@@ -12,14 +12,15 @@ import WhoWeAre from "./components/WhoWeAre";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import Career from "./components/Career";
-import AboutUs from "./components/AboutUs";
+import { AboutUs, HomeAboutUs } from "./components/AboutUs";
 import Login from "./components/Login";
-import Products from "./components/Products";
+import { Products, HomeProduct } from "./components/Products";
+
 import ScrollToTop from "./components/ScrollToTop";
-import ScrollButton from "./components/ScrollButton";
 import Blog from "./components/Blog";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
+import { useEffect, useState } from "react";
 
 function App() {
   // className = "bg-gradient-to-r from-blue-500";
@@ -35,12 +36,32 @@ function App() {
         <Services />
         {/* <ClientData />
         <Clients /> */}
-        <Products />
-        <AboutUs />
+        <HomeProduct />
+        <HomeAboutUs />
         {/* <Login /> */}
         <Footer />
       </div>
     );
+  };
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
   };
 
   return (
@@ -72,7 +93,7 @@ function App() {
         <Navbar />
         {/* <Navbar /> */}
         <div className="flex flex-col absolute z-50 left-0 top-1/3">
-          <div className="flex flex-col fixed right-0 top-2/3 bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
+          <div className="flex flex-col fixed right-0 top-[58vh] bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
             <div className="mr-4 hover:scale-110 ">
               {" "}
               <SocialMediaIconsReact
@@ -129,7 +150,13 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
-        <ScrollButton />
+        {/* <ScrollButton /> */}
+
+        {showButton && (
+          <button onClick={scrollToTop} className="back-to-top">
+            &#8679;
+          </button>
+        )}
 
         {/* <Routes>
           <Route exact path="/contactus" element={<ContactUs />} />
