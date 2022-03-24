@@ -93,7 +93,7 @@ function App() {
         <Navbar />
         {/* <Navbar /> */}
         <div className="flex flex-col absolute z-50 left-0 top-1/3">
-          <div className="flex flex-col fixed right-0 top-[58vh] bg-blue-400/50 pl-2 py-2 rounded-md   items-center flex-wrap">
+          <div className="flex flex-col space-y-1 fixed right-0 top-[58vh] bg-blue-400/50 pl-2 py-2  rounded-md   items-center flex-wrap">
             <div className="mr-4 hover:scale-110 ">
               {" "}
               <SocialMediaIconsReact
@@ -153,7 +153,10 @@ function App() {
         {/* <ScrollButton /> */}
 
         {showButton && (
-          <button onClick={scrollToTop} className="back-to-top">
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-5 right-3 font-bold text-4xl bg-blue-400/80 text-slate-50 p-3 cursor-pointer rounded-md "
+          >
             &#8679;
           </button>
         )}

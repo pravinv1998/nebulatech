@@ -45,7 +45,7 @@ const ContactUs = () => {
   return (
     <div className="w-full h-full grid grid-cols-1 gap-2  ">
       <div className="grid grid-cols-1 p-2  md:grid-cols-2 place-content-center ">
-        <div className="grid grid-cols-1  place-items-center  w-full rounded-md m-4 bg-transparent   p-2 ">
+        <div className="grid bg-blue-300/50 grid-cols-1  place-items-center  w-full rounded-md m-4     p-2 ">
           <div
             data-aos="fade-bottom"
             className="w-full text-slate-100 md:w-3/4"
@@ -63,17 +63,21 @@ const ContactUs = () => {
             >
               <h1
                 data-aos="fade-right"
-                className="flex flex-wrap text-slate-900  text-[1.3em] "
+                className="flex flex-wrap text-slate-900 space-x-2  text-[1.3em] "
               >
                 {" "}
-                <PhoneIcon /> 8668768612, 8097760688, 7507316272
+                <PhoneIcon /> <a href="tel:+918668768612">8668768612</a> ,
+                <a href="tel:+918097760688">8097760688</a> ,
+                <a type="tel" href="tel:+917507316272">
+                  7507316272
+                </a>
               </h1>
               <h1
                 data-aos="fade-left"
-                className="flex flex-wrap text-slate-900  text-[1.3em] "
+                className="flex flex-wrap text-slate-900 space-x-2  text-[1.3em] "
               >
                 {" "}
-                <EmailIcon /> hr@nebula-technology.com
+                <EmailIcon /> <h1>hr@nebula-technology.com</h1>
               </h1>
             </div>
             <div

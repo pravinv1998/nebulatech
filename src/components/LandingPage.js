@@ -22,11 +22,11 @@ const LandingPage = () => {
   return (
     <div
       // style={{ backgroundImage: `url( ${background})` }}
-      className="   grid place-content-end bg-transparent  grid-cols-1  text-red-900      md:h-[55vh] "
+      className="   grid place-content-end bg-transparent  grid-cols-1  text-red-900  mt-8 md:mt-0    md:h-[55vh] "
       // className="bg-repeat-x bg-blend-color-burn bg-left-bottom bg-cover    grid place-content-center bg-transparent  grid-cols-1 md:grid-cols-2 text-red-900 pt-2 md:py-8    md:h-screen "
     >
       <div className="flex flex-col space-y-4 justify-center h-full md:mb-10 items-center  ">
-        <div className="bg-slate-50/50 p-8 rounded-md animate-navafter drop-shadow-3xl  ">
+        <div className="bg-slate-50/50  p-8 rounded-md animate-navafter drop-shadow-3xl  ">
           <h1 className=" flex items-center text-4xl  md:text-8xl font-extrabold   ">
             N{" "}
             <img
