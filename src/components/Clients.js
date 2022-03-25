@@ -1,14 +1,11 @@
 import React from "react";
 
-import garage_on_the_wheel from "../assets/clients/garage_on_the_wheel.jpg";
 import garage from "../assets/clients/garage_on_the_wheel _1.jpg";
 
 import lauro from "../assets/clients/lauro.jpg";
 import mahadev_clg from "../assets/clients/mahadev_clg.jpg";
 import tarasa from "../assets/clients/tarasa.png";
 import tech_mahindra from "../assets/clients/tech_mahindra.png";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -31,7 +28,7 @@ SwiperCore.use([Pagination, Navigation, Scrollbar, A11y]);
 const Clients = () => {
   return (
     <div className="overflow-hidden w-full h-full bg-try/20  flex flex-col flex-wrap items-center justify-around p-8  ">
-      <h1 className="font-sans md:text-3xl text-2xl mb-8 text-cyan-100 ">
+      <h1 className="  font-bold font-serif text-5xl my-8  md:my-12 text-cyan-100">
         {" "}
         Our Clients{" "}
       </h1>

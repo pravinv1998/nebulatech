@@ -1,9 +1,4 @@
-import React from "react";
-import college from "../assets/products/college.png";
-import construction from "../assets/products/construction.png";
-import dairy from "../assets/products/dairy.png";
-
-import wheel from "../assets/products/wheel.png";
+import wheel from "../assets/clients/wheel.png";
 
 import mahadev_clg from "../assets/clients/mahadev_clg.jpg";
 import milk_bank from "../assets/clients/milk_bank.jpg";
@@ -15,17 +10,17 @@ const Data = [
   {
     id: 1,
     image: mahadev_clg,
-    name: "College ERP",
+    name: "College ERP System",
   },
   {
     id: 2,
     image: wheel,
-    name: "Construction ERP Application",
+    name: "Construction ERP App",
   },
   {
     id: 3,
     image: milk_bank,
-    name: "Milk Bank System",
+    name: "Milk Bank System App",
   },
   {
     id: 4,
@@ -35,12 +30,12 @@ const Data = [
   {
     id: 5,
     image: society,
-    name: "Society Management System",
+    name: "Society ERP System",
   },
   {
     id: 6,
     image: garage,
-    name: "Garage On Wheel",
+    name: "Garage On Wheel System",
   },
 ];
 

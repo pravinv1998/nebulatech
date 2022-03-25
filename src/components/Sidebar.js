@@ -1,26 +1,28 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
-import InfoIcon from "@mui/icons-material/Info";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import HomeIcon from "@mui/icons-material/Home";
-import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
+// import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { Link } from "react-router-dom";
-import NoteIcon from "@mui/icons-material/Note";
 
 export default function Sidebar() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -56,34 +58,26 @@ export default function Sidebar() {
     >
       <List>
         <Link to="/">
-          <ListItem button>
+          <ListItem button onClick={scrollToTop}>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <HomeIcon />
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
         </Link>
-        <Divider />
+        {/* <Divider />
         <Link to="products">
-          <ListItem button>
+          <ListItem button onClick={scrollToTop} >
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <LocalGroceryStoreIcon />
             </ListItemIcon>
             <ListItemText primary="Products" />
           </ListItem>
-        </Link>
+        </Link> */}
         <Divider />
-        {/* <Link to="blogs">
-          <ListItem button>
-            <ListItemIcon sx={{ color: "#F0F9FF" }}>
-              <NoteIcon />
-            </ListItemIcon>
-            <ListItemText primary="Blogs" />
-          </ListItem>
-        </Link>
-        <Divider /> */}
+
         <Link to="career">
-          <ListItem button>
+          <ListItem button onClick={scrollToTop}>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <DirectionsWalkIcon />
             </ListItemIcon>
@@ -92,7 +86,7 @@ export default function Sidebar() {
         </Link>
         <Divider />
         <Link to="/contactus">
-          <ListItem button>
+          <ListItem button onClick={scrollToTop}>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <PermContactCalendarIcon />
             </ListItemIcon>
@@ -100,7 +94,7 @@ export default function Sidebar() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="aboutus">
+        {/* <Link to="aboutus">
           <ListItem button>
             <ListItemIcon sx={{ color: "#F0F9FF" }}>
               <InfoIcon />
@@ -108,7 +102,7 @@ export default function Sidebar() {
             <ListItemText primary="About Us" />
           </ListItem>
         </Link>
-        <Divider />
+        <Divider /> */}
       </List>
     </Box>
   );

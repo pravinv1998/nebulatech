@@ -59,7 +59,7 @@ const ContactUs = () => {
             </Link>
             <div
               data-aos="flip-down"
-              className="w-full shadow-lg items-center   rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
+              className=" pl-4 md:pl-8 w-full shadow-lg items-center   rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
             >
               <h1
                 data-aos="fade-right"
@@ -82,7 +82,7 @@ const ContactUs = () => {
             </div>
             <div
               data-aos="flip-up"
-              className=" shadow-xl  w-full rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
+              className="pl-4 md:pl-8 shadow-xl  w-full rounded-md  bg-slate-50 mt-4 space-y-2 p-2 "
             >
               <h1
                 data-aos="fade-right"

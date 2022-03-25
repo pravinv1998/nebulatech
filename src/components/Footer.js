@@ -54,7 +54,7 @@ const Footer = ({ isShow }) => {
             </Link>
             <div
               data-aos="flip-down"
-              className="w-full shadow-lg  shadow-slate-500/50  rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 "
+              className="hover:text-bold hover:text-cyan-900 hover:bg-slate-50 duration-500 w-full shadow-lg  shadow-slate-500/50  rounded-md  bg-slate-500/30 mt-4 pl-4 md:pl-8 space-y-2 p-2 "
             >
               <h1 className="flex flex-wrap   text-[18px] ">
                 {" "}
@@ -69,7 +69,7 @@ const Footer = ({ isShow }) => {
                 <EmailIcon /> hr@nebula-technology.com
               </h1>
             </div>
-            <div className=" shadow-xl shadow-slate-500/50 w-full rounded-md  bg-slate-500/30 mt-4 space-y-2 p-2 ">
+            <div className="hover:text-bold hover:text-cyan-900 hover:bg-slate-50 duration-500  shadow-xl shadow-slate-500/50 w-full rounded-md  bg-slate-500/30 mt-4 pl-4 md:pl-8 space-y-2 p-2 ">
               <h1 className="   text-[18px] ">
                 CTS No 349, 3rd floor, Shilavihar Colony,
               </h1>

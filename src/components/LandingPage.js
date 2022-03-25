@@ -1,24 +1,7 @@
-import React, { useEffect, useState } from "react";
-import back from "../assets/img/back.png";
 import icon from "../assets/lngico/icon.png";
-import background from "../assets/back.png";
 import "../App.css";
 
-import { SocialMediaIconsReact } from "social-media-icons-react";
-import Tech from "./Tech";
-
 const LandingPage = () => {
-  // const technology = ["Web App", "Mobile App", "Serverside App"];
-  // const [tech, setTech] = useState("");
-
-  // useEffect(() => {
-  //   let i = 0;
-  //   while (true) {
-  //     i++;
-  //     setTech(technology[i]);
-  //   }
-  // }, []);
-
   return (
     <div
       // style={{ backgroundImage: `url( ${background})` }}

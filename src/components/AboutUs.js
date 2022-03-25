@@ -73,8 +73,8 @@ const HomeAboutUs = () => {
         // style={{ backgroundImage: `url( ${about})` }}
         className="w-screen h-1/6 md:h-1/5 bg-cover no-repeat bg-fixed bg-left flex justify-center items-center "
       >
-        <h1 className="text-2xl md:text-4xl text-center justify-center text-cyan-100 ">
-          About Us
+        <h1 className="  text-center justify-center font-bold font-serif text-5xl my-8  md:my-12 text-cyan-100 ">
+          Our Services
         </h1>
       </div>
       <div className="px-10 py-3">

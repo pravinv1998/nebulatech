@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-// import background from "./assets/back.png";
 import videobg from "./assets/videobg.mp4";
 
 import Navbar from "./components/Navbar";
@@ -17,7 +16,6 @@ import Login from "./components/Login";
 import { Products, HomeProduct } from "./components/Products";
 
 import ScrollToTop from "./components/ScrollToTop";
-import Blog from "./components/Blog";
 
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import { useEffect, useState } from "react";
@@ -146,7 +144,6 @@ function App() {
           <Route exact path="/contactus" element={<ContactUs />} />
           <Route exact path="/aboutus" element={<AboutUs />} />
           <Route exact path="/products" element={<Products />} />
-          <Route exact path="/blogs" element={<Blog />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
