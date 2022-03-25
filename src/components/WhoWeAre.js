@@ -1,10 +1,9 @@
 import React from "react";
-import whoweare from "../assets/img/whoweare.jpg";
 import who from "../assets/img/who.jpg";
 
 const WhoWeAre = () => {
   return (
-    <div className="  ">
+    <div>
       <div
         // style={{ backgroundImage: `url( ${who})` }}
         className="flex justify-center items-center  bg-no-repeat bg-cover bg-fixed   w-full h-full  "

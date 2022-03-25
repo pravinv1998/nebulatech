@@ -32,11 +32,10 @@ function App() {
         <Tech />
         <WhoWeAre />
         <Services />
-        {/* <ClientData />
-        <Clients /> */}
+
         <HomeProduct />
         <HomeAboutUs />
-        {/* <Login /> */}
+
         <Footer />
       </div>
     );
@@ -87,9 +86,7 @@ function App() {
         // style={{ backgroundImage: `url( ${background})` }}
       >
         <ScrollToTop />
-        {/* <Sidebar /> */}
         <Navbar />
-        {/* <Navbar /> */}
         <div className="flex flex-col absolute z-50 left-0 top-1/3">
           <div className="flex flex-col space-y-1 fixed right-0 top-[58vh] bg-blue-400/50 pl-2 py-2  rounded-md   items-center flex-wrap">
             <div className="mr-4 hover:scale-110 ">
@@ -147,7 +144,6 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
-        {/* <ScrollButton /> */}
 
         {showButton && (
           <button
@@ -157,10 +153,6 @@ function App() {
             &#8679;
           </button>
         )}
-
-        {/* <Routes>
-          <Route exact path="/contactus" element={<ContactUs />} />
-        </Routes> */}
       </div>
     </div>
   );
